@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/Assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-roboto">
+    <div class="flex size-full">
+        <div
+            class="bg-[url('/Assets/png/login-bg.png')] bg-left bg-[length:100%_100%] bg-no-repeat w-[45%] flex items-center">
+            <div
+                class="bg-[url('/Assets/png/login-logo-bg.png')] bg-left bg-[length:100%_100%] bg-no-repeat max-w-[470px] w-full flex justify-center py-[61px]">
+                <a href="/login.html">
+                    <img class="w-[256px]" src="/Assets/SVG/Logo.svg" alt="logo" class="max-w-full h-auto" />
+                </a>
+            </div>
+        </div>
+        <div class="w-[55%] flex justify-center items-center">
+            <div class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] mx-auto rounded-[8px] my-[120px]">
+                <div class="flex flex-col max-w-[560px] xl:px-[66px] xl:py-[50px]">
+                    <div class="flex flex-col gap-[51px]">
+                        <div class="flex flex-col gap-[13px]">
+                            <h1 class="text-[#3D3D3D] xl:text-[48px] font-medium tracking-[1px]
+                            ">Welcome back,</h1>
+                            <p class="text-[#868686] lg:text-[16px] font-light tracking-[0.32px]">Lorem ipsum dolor sit
+                                amet,
+                                consectetur
+                                adipiscing
+                                elit. Ut tristique
+                                consequat
+                                euismod at
+                                sed
+                                lorem.</p>
+                        </div>
+                        <div>
+                            <form action="login Detail">
+                                <div class="flex flex-col gap-[31px]">
+                                    <div class="flex flex-col gap-[32px]">
+                                        <div class="flex flex-col gap-[39px]">
+                                            <div
+                                                class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[15px] xl:px-[28px_17px] flex justify-between items-center">
+                                                <label
+                                                    class="absolute top-[-17px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] text-[#3D3D3D] font-medium tracking-[0.4px]"
+                                                    for="Mail">E-mail</label>
+                                                <input
+                                                    class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px]"
+                                                    type="email" name="mail" id="Mail"
+                                                    placeholder="Rootsaccounting12@gmail.com" required>
+                                                <img class="xl:w-[23px]" src="/Assets/SVG/@.svg" alt="@">
+                                            </div>
+                                            <div
+                                                class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[23px] xl:px-[28px_20px] flex justify-between items-center">
+                                                <label
+                                                    class="absolute lg:top-[-17px] lg:left-[30px] bg-white lg:p-[2px_14px_0_10px] xl:text-[20px] text-[#3D3D3D] font-medium tracking-[0.4px]"
+                                                    for="Password">Password</label>
+                                                <input
+                                                    class="border-0 xl:placeholder:text-[105px] placeholder:text-[#C4C4C4] placeholder:font-normal xl:placeholder:tracking-[-8px] w-full outline-none"
+                                                    type="password" name="password" id="Password" placeholder="........"
+                                                    required>
+                                                <img class="xl:w-[23px]" src="/Assets/SVG/eyes.svg" alt="eyeys">
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <div class="flex items-center gap-[12px]">
+                                                <input class="rounded-[5px] transform scale-[1.8]" type="checkbox"
+                                                    name="remember" id="checkbox">
+                                                <label
+                                                    class="text-[#868686] lg:text-[18px] font-normal tracking-[0.36px]"
+                                                    for="checkbox">Remember Me</label>
+                                            </div>
+                                            <div>
+                                                <a class="text-[#387665] lg:text-[18px] font-normal tracking-[0.36px]"
+                                                    href="#">Forgot Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-[30px] items-center">
+                                        <div class="flex justify-center items-center">
+                                            <a class="bg-[#387665] rounded-[10px] text-white lg:text-[18px] font-medium tracking-[0.36px] xl:px-[106px] xl:py-[12px]"
+                                                href="">Login</a>
+                                        </div>
+                                        <div>
+                                            <p class="text-[#3D3D3D] xl:text-[20px] font-normal tracking-[0.4px]">Don’t
+                                                Have An Account? <a class="text-[#387665] font-medium"
+                                                    href="/singup.html">Sign
+                                                    up</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

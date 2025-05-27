@@ -5,46 +5,357 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Income and expenses</title>
-    <link rel="stylesheet" href="/Assets/style.css">
+    <link rel="stylesheet" href="./Assets/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="font-roboto">
-    <div class="flex">
+    <div class="flex py-[30px] px-[25px_30px] gap-[35px]">
         <div
-            class="max-w-[300px] w-full flex flex-col shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] justify-center items-center">
+            class="max-w-[280px] w-full flex flex-col shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] items-center p-[20px] rounded-xl gap-[75px]">
             <div>
-                <a href="/index.html"><img class="xl:w-[180px]" src="/Assets/SVG/Logo.svg" alt="logo"></a>
+                <div>
+                    <a href="/index.html"><img class="xl:w-[180px]" src="/Assets/SVG/Logo.svg" alt="logo"></a>
+                </div>
+                <div class="my-[18px_20px]">
+                    <img src="/Assets/SVG/1673.svg" alt="1673">
+                </div>
+                <div class="w-full flex flex-col gap-[5px]">
+                    <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px]" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                            <path
+                                d="M21 9.9V3.1C21 1.6 20.36 1 18.77 1H14.73C13.14 1 12.5 1.6 12.5 3.1V9.9C12.5 11.4 13.14 12 14.73 12H18.77C20.36 12 21 11.4 21 9.9Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path opacity="0.4"
+                                d="M21 18.9V17.1C21 15.6 20.36 15 18.77 15H14.73C13.14 15 12.5 15.6 12.5 17.1V18.9C12.5 20.4 13.14 21 14.73 21H18.77C20.36 21 21 20.4 21 18.9Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9.5 12.1V18.9C9.5 20.4 8.86 21 7.27 21H3.23C1.64 21 1 20.4 1 18.9V12.1C1 10.6 1.64 10 3.23 10H7.27C8.86 10 9.5 10.6 9.5 12.1Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path opacity="0.4"
+                                d="M9.5 3.1V4.9C9.5 6.4 8.86 7 7.27 7H3.23C1.64 7 1 6.4 1 4.9V3.1C1 1.6 1.64 1 3.23 1H7.27C8.86 1 9.5 1.6 9.5 3.1Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="text-[#3D3D3D] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">Dashboard</p>
+                    </a>
+                    <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px] bg-[rgba(57,118,101,0.15)] group"
+                        href="/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2 2V19C2 20.66 3.34 22 5 22H22" stroke="#397665" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path opacity="0.4"
+                                d="M5 17L9.59 11.64C10.35 10.76 11.7 10.7 12.52 11.53L13.47 12.48C14.29 13.3 15.64 13.25 16.4 12.37L21 7"
+                                stroke="#397665" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <p class="text-[20px] text-[#397665] font-normal tracking-[0.4px] opacity-[0.8]">Report</p>
+                    </a>
+                    <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group"
+                        href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g opacity="0.4">
+                                <path class="group-hover:stroke-[#397665]"
+                                    d="M10.7501 16.86V18.89C10.7501 20.61 9.15011 22 7.18011 22C5.21011 22 3.6001 20.61 3.6001 18.89V16.86C3.6001 18.58 5.20011 19.8 7.18011 19.8C9.15011 19.8 10.7501 18.57 10.7501 16.86Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path class="group-hover:stroke-[#397665]"
+                                    d="M10.7498 14.11C10.7498 14.61 10.6098 15.07 10.3698 15.47C9.77981 16.44 8.5698 17.05 7.1698 17.05C5.7698 17.05 4.55979 16.43 3.96979 15.47C3.72979 15.07 3.58984 14.61 3.58984 14.11C3.58984 13.25 3.98982 12.48 4.62982 11.92C5.27982 11.35 6.16979 11.01 7.15979 11.01C8.14979 11.01 9.03982 11.36 9.68982 11.92C10.3498 12.47 10.7498 13.25 10.7498 14.11Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path class="group-hover:stroke-[#397665]"
+                                    d="M10.7501 14.11V16.86C10.7501 18.58 9.15011 19.8 7.18011 19.8C5.21011 19.8 3.6001 18.57 3.6001 16.86V14.11C3.6001 12.39 5.20011 11 7.18011 11C8.17011 11 9.06014 11.35 9.71014 11.91C10.3501 12.47 10.7501 13.25 10.7501 14.11Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <path class="group-hover:stroke-[#397665]"
+                                d="M22 10.97V13.03C22 13.58 21.56 14.03 21 14.05H19.0399C17.9599 14.05 16.97 13.26 16.88 12.18C16.82 11.55 17.0599 10.96 17.4799 10.55C17.8499 10.17 18.36 9.95001 18.92 9.95001H21C21.56 9.97001 22 10.42 22 10.97Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path class="group-hover:stroke-[#397665]"
+                                d="M2 10.5V8.5C2 5.78 3.64 3.88 6.19 3.56C6.45 3.52 6.72 3.5 7 3.5H16C16.26 3.5 16.51 3.50999 16.75 3.54999C19.33 3.84999 21 5.76 21 8.5V9.95001H18.92C18.36 9.95001 17.85 10.17 17.48 10.55C17.06 10.96 16.82 11.55 16.88 12.18C16.97 13.26 17.96 14.05 19.04 14.05H21V15.5C21 18.5 19 20.5 16 20.5H13.5"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p
+                            class="text-[#3D3D3D] group-hover:text-[#397665] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">
+                            Payments</p>
+                    </a>
+                    <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group"
+                        href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path class="group-hover:stroke-[#397665]" opacity="0.34"
+                                d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path class="group-hover:stroke-[#397665]"
+                                d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <p
+                            class="text-[#3D3D3D] group-hover:text-[#397665] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">
+                            Settings</p>
+                    </a>
+                    <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group"
+                        href="/">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path class="group-hover:stroke-[#397665]"
+                                d="M17.5399 8.31001C18.8986 8.31001 20 7.20863 20 5.85001C20 4.49139 18.8986 3.39001 17.5399 3.39001C16.1813 3.39001 15.08 4.49139 15.08 5.85001C15.08 7.20863 16.1813 8.31001 17.5399 8.31001Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path class="group-hover:stroke-[#397665]" opacity="0.4"
+                                d="M6.46001 8.31001C7.81863 8.31001 8.92 7.20863 8.92 5.85001C8.92 4.49139 7.81863 3.39001 6.46001 3.39001C5.10139 3.39001 4 4.49139 4 5.85001C4 7.20863 5.10139 8.31001 6.46001 8.31001Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path class="group-hover:stroke-[#397665]" opacity="0.4"
+                                d="M17.5399 20.61C18.8986 20.61 20 19.5086 20 18.15C20 16.7914 18.8986 15.69 17.5399 15.69C16.1813 15.69 15.08 16.7914 15.08 18.15C15.08 19.5086 16.1813 20.61 17.5399 20.61Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path class="group-hover:stroke-[#397665]"
+                                d="M6.46001 20.61C7.81863 20.61 8.92 19.5086 8.92 18.15C8.92 16.7914 7.81863 15.69 6.46001 15.69C5.10139 15.69 4 16.7914 4 18.15C4 19.5086 5.10139 20.61 6.46001 20.61Z"
+                                stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <p
+                            class="text-[#3D3D3D] group-hover:text-[#397665] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">
+                            More</p>
+                    </a>
+                </div>
             </div>
-            <div>
-                <img src="/Assets/SVG/1673.svg" alt="1673">
-            </div>
-            <div class="w-full flex flex-col gap-[5px]">
-                <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px]" href="#">
-                    <img class="w-[20px]" src="/Assets/SVG/Dashboard.svg" alt="Dashboard">
-                    <p class="text-[#3D3D3D] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">Dashboard</p>
-                </a>
-                <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px] active:bg-[rgba(57,118,101,0.15)]"
-                    href="/index.html">
-                    <img class="w-[24px]" src="/Assets/SVG/Report.svg" alt="Report">
-                    <p class="text-[20px] text-[#3D3D3D] font-normal tracking-[0.4px] opacity-[0.8]">Report</p>
-                </a>
-                <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px]" href="#">
-                    <img class="w-[24px]" src="/Assets/SVG/Payments.svg" alt="Dashboard">
-                    <p class="text-[#3D3D3D] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">Payments</p>
-                </a>
-                <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px]" href="#">
-                    <img class="w-[24px]" src="/Assets/SVG/Settings.svg" alt="Dashboard">
-                    <p class="text-[#3D3D3D] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">Settings</p>
-                </a>
-                <a class="flex gap-[17px] w-full pl-[17px] py-[15px] rounded-[10px]" href="#">
-                    <img class="w-[24px]" src="/Assets/SVG/menu.svg" alt="Dashboard">
-                    <p class="text-[#3D3D3D] text-[20px] font-normal tracking-[0.4px] opacity-[0.8]">More</p>
-                </a>
+            <div class="w-full flex flex-col gap-[16px]">
+                <h2 class="text-[#3D3D3D] xl:text-[24px] font-normal tracking-[0.48px]">Filter</h2>
+                <form class="flex flex-col gap-[30px] bg-[rgba(181,166,66,0.15)] p-[20px_15px] rounded-xl"
+                    action="Date">
+                    <div class="flex flex-col gap-[13px] items-center w-full">
+                        <input
+                            class="input-field date text-[14px] w-full text-[#3D3D3D] bg-white py-[12px] px-[12px_9px] rounded-lg outline-none"
+                            type="date">
+                        <p>To</p>
+                        <input
+                            class="input-field date text-[14px] w-full text-[#3D3D3D] bg-white py-[12px] px-[12px_9px] rounded-lg outline-none"
+                            type="date">
+                    </div>
+                    <div class="flex justify-between bg-white p-[12px] rounded-lg">
+                        <p class=" text-[#3D3D3D] max-w-[300px]">
+                            Quick Filter</p> <img src="/Assets/SVG/select.svg" alt="slct">
+                    </div>
+                </form>
             </div>
         </div>
-        <div></div>
+        <div class="w-full">
+            <div class="flex flex-col gap-[30px]">
+                <div class="flex flex-col gap-[20px]">
+                    <div class="w-full flex justify-between bg-[#397665] rounded-xl px-[30px] py-[15px_17px]">
+                        <p class="text-white text-2xl font-medium tracking-[0.48px]">Total Income</p>
+                        <p class="text-white text-2xl font-medium tracking-[0.48px]">£ 1673</p>
+                    </div>
+                    <div
+                        class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col gap-[10px] py-[0_35px]">
+                        <div
+                            class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] px-[30px] py-[10px_12px]">
+                            <p class="text-[#3D3D3D] text-xl font-medium tracking-[0.4px]">Sales</p>
+                            <p class="flex gap-[15px] text-[#3D3D3D] text-xl font-medium tracking-[0.4px] items-center">
+                                £
+                                7726.06
+                                <img class="w-[14px]" src="/Assets/SVG/select.svg" alt="slct">
+                            </p>
+                        </div>
+                        <div class="px-[30px]">
+                            <div class="flex justify-between py-[16px] pr-[7px]">
+                                <p class="text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">Sale</p>
+                                <p
+                                    class="flex iteam-center gap-[23px] text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">
+                                    £ 7726.06 <img src="/Assets/SVG/dot.svg" alt=".">
+                                </p>
+                            </div>
+                            <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">17 July, 2020</p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Specbavers Optical
+                                        Group Ltd</p>
+                                </div>
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Invoice Receipt
+                                    </p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ 1000.00</p>
+                                </div>
+                            </div>
+                            <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">29 April, 2020</p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Specbavers Optical
+                                        Group Ltd</p>
+                                </div>
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Invoice Receipt
+                                    </p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ 3255.20</p>
+                                </div>
+                            </div>
+                            <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">05 March, 2020</p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Specbavers Optical
+                                        Group Ltd</p>
+                                </div>
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Invoice Receipt
+                                    </p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ 1398.36</p>
+                                </div>
+                            </div>
+                            <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">01 July, 2020</p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Specbavers Optical
+                                        Group Ltd</p>
+                                </div>
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Invoice Receipt
+                                    </p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ 1300.00</p>
+                                </div>
+                            </div>
+                            <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">05 May, 2020</p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Specbavers Optical
+                                        Group Ltd</p>
+                                </div>
+                                <div class="flex justify-between w-full max-w-[475px]">
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Invoice Receipt
+                                    </p>
+                                    <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ 375.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-[20px]">
+                    <div class="w-full flex justify-between bg-[#397665] rounded-xl px-[30px] py-[15px_17px]">
+                        <p class="text-white text-2xl font-medium tracking-[0.48px]">Total Expense</p>
+                        <p class="text-white text-2xl font-medium tracking-[0.48px]">£ -6052.55</p>
+                    </div>
+                    <div
+                        class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col gap-[10px] py-[0_35px]">
+                        <div>
+                            <div
+                                class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] px-[30px] py-[10px_12px]">
+                                <p class="text-[#3D3D3D] text-xl font-medium tracking-[0.4px]">Sales</p>
+                                <p
+                                    class="flex gap-[15px] text-[#3D3D3D] text-xl font-medium tracking-[0.4px] items-center">
+                                    £ -545.00
+                                    <img class="w-[14px]" src="/Assets/SVG/select.svg" alt="slct">
+                                </p>
+                            </div>
+                            <div class="px-[30px]">
+                                <div class="flex justify-between py-[16px] pr-[7px]">
+                                    <p class="text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">Sale</p>
+                                    <p
+                                        class="flex iteam-center gap-[23px] text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">
+                                        £ -545.00 <img src="/Assets/SVG/dot.svg" alt=".">
+                                    </p>
+                                </div>
+                                <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                    <div class="flex justify-between w-full max-w-[325px]">
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">02 May, 20</p>
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">AWS May</p>
+                                    </div>
+                                    <div class="flex justify-between w-full max-w-[475px]">
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Computer
+                                            Software
+                                        </p>
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ -545.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] px-[30px] py-[10px_12px]">
+                                <p class="text-[#3D3D3D] text-xl font-medium tracking-[0.4px]">Office Costs</p>
+                                <p
+                                    class="flex gap-[15px] text-[#3D3D3D] text-xl font-medium tracking-[0.4px] items-center">
+                                    £ -5125.00
+                                    <img class="w-[14px]" src="/Assets/SVG/select.svg" alt="slct">
+                                </p>
+                            </div>
+                            <div class="px-[30px]">
+                                <div class="flex justify-between py-[16px] pr-[7px]">
+                                    <p class="text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">Internet &
+                                        Telephone</p>
+                                    <p
+                                        class="flex iteam-center gap-[23px] text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">
+                                        £ -5000.00 <img src="/Assets/SVG/dot.svg" alt=".">
+                                    </p>
+                                </div>
+                                <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                    <div class="flex justify-between w-full max-w-[325px]">
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">29 April, 20
+                                        </p>
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Redsquid</p>
+                                    </div>
+                                    <div class="flex justify-between w-full max-w-[475px]">
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Internet &
+                                            Telephone Inc E416 67VAT</p>
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ -545.00</p>
+                                    </div>
+                                </div>
+                                <div class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                    <div class="flex justify-between w-full max-w-[325px]">
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">02 May, 20</p>
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Redsquid</p>
+                                    </div>
+                                    <div class="flex justify-between w-full max-w-[475px]">
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Internet &
+                                            Telephone Inc E416 67VAT</p>
+                                        <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ -545.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between py-[16px] px-[30px]">
+                                <p class="text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">Rent</p>
+                                <p
+                                    class="flex iteam-center gap-[23px] text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">
+                                    £ -5000.00 <img src="/Assets/SVG/dot.svg" alt=".">
+                                </p>
+                            </div>
+                            <div>
+                                <div class="px-[30px]">
+                                    <div class="flex justify-between py-[16px] pr-[7px]">
+                                        <p class="text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">Web Hosting
+                                        </p>
+                                        <p
+                                            class="flex iteam-center gap-[23px] text-[#3D3D3D] xl:text-lg font-medium tracking-[0.36px]">
+                                            £ -382.55 <img src="/Assets/SVG/dot.svg" alt=".">
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex w-full gap-[30px] py-[15px] border-t border-[#868686] justify-between">
+                                        <div class="flex justify-between w-full max-w-[325px]">
+                                            <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">27 April,
+                                                20
+                                            </p>
+                                            <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Redsquid
+                                            </p>
+                                        </div>
+                                        <div class="flex justify-between w-full max-w-[475px]">
+                                            <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">Web
+                                                Hosting
+                                                Inc £ -178.40 VAT
+                                            </p>
+                                            <p class="text-[#3D3D3D] text-base font-normal tracking-[0.32px]">£ -178.40
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+<script src="./script.js"></script>
 
 </html>

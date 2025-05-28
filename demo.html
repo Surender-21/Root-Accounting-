@@ -6,6 +6,22 @@
 
 <body>
 
+    <div class="max-w-[350px] mx-auto">
+        <div class="bg-white rounded shadow">
+            <button
+                onclick="document.getElementById('accordion-body').classList.toggle('hidden'); this.querySelector('span').classList.toggle('rotate-180');"
+                class="w-full px-6 py-4 text-left text-lg font-semibold text-gray-800 bg-gray-200 hover:bg-gray-300 focus:outline-none">
+                What is Tailwind CSS?
+                <span class="float-right transform transition-transform duration-300">▼</span>
+            </button>
+
+            <div id="accordion-body" class="hidden px-6 py-4 text-gray-700 border-t flex flex-col">
+                <a class="hover:bg-red-200" href="#">page 1</a>
+                <a class="hover:bg-red-300" href="#">page 2</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <script src="./script.js"></script>

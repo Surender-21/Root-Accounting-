@@ -4,685 +4,114 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Income and expenses</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./Assets/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="font-roboto">
-    <div
-        class="flex xl:py-[30px] lg:py-[27px] md:py-[25px] xl:px-[25px_30px] md:px-[18px_20px] lg:px-[22px_27px] xl:gap-[35px] lg:gap-[30px] sm:py-[18px] sm:px-[20px] px-[16px] py-[12px] md:gap-[25px] sm:gap-[22px] gap-[10px] flex-col lg:flex-row relative">
-        <div class="flex justify-between items-center block lg:hidden">
-            <div>
-                <a href="./index.html"> <img class="md:w-[120px] sm:w-[110px] w-[95px]" src="/Assets/SVG/Logo.svg"
-                        alt="logo"></a>
-            </div>
-            <div>
-                <div class="w-full">
-                    <input type="checkbox" id="menu-btn" class="peer hidden" />
-                    <label for="menu-btn"
-                        class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#1f1f1f">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg>
-                    </label>
-                    <div
-                        class="hidden peer-checked:block absolute top-0 right-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 md:max-w-[300px] sm:max-w-[250px] max-w-[200px] w-full h-screen">
-                        <div class="flex flex-col gap-[10px]">
-                            <div>
-                                <a href="/index.html">
-                                    <img class="md:w-[100px] sm:w-[90px] w-[80px]" src="./Assets/SVG/Logo.svg"
-                                        alt="logo">
-                                </a>
-                            </div>
-                            <div>
-                                <ul class="space-y-[10px] mb-4">
-                                    <li><a href="#" class="text-[#3D3D3D] hover:text-[#397665]">Setting</a></li>
-                                    <li><a href="#" class="text-[#3D3D3D] hover:text-[#397665]">User Profile</a></li>
-                                    <li><a href="./login.html" class="text-[#3D3D3D] hover:text-[#397665]">Logout</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <label for="menu-btn"
-                            class="absolute top-2 right-2 cursor-pointer p-1 rounded hover:bg-[#d3cfb0]">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-800" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg></label>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="flex size-full flex-wrap md:flex-nowrap justify-center">
         <div
-            class="xl:max-w-[280px] w-full shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] items-center xl:p-[20px] lg:p-[18px] md:p-[15px] rounded-xl lg:max-w-[235px] md:max-w-[170px] hidden lg:block">
-            <div class="flex flex-col xl:gap-[75px] lg:gap-[70px] md:gap-[50px]">
-                <div class="flex flex-col items-center">
-                    <div>
-                        <a href="./index.html"><img class="xl:w-[180px] lg:w-[160px] md:w-[125px]"
-                                src="./Assets/SVG/Logo.svg" alt="logo"></a>
-                    </div>
-                    <div class="xl:my-[18px_20px] lg:my-[15px_18px] md:my-[12px_15px]">
-                        <img class="xl:w-[224px] lg:w-[195px] md:w-[165px]" src="./Assets/SVG/1673.svg" alt="1673">
-                    </div>
-                    <div class="w-full flex flex-col gap-[5px]">
-                        <a class="flex items-center xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px]"
-                            href="#">
-                            <svg class="xl:w-[22px] lg:w-[18px] md:w-[16px]" xmlns="http://www.w3.org/2000/svg"
-                                width="22" height="22" viewBox="0 0 22 22" fill="none">
-                                <path
-                                    d="M21 9.9V3.1C21 1.6 20.36 1 18.77 1H14.73C13.14 1 12.5 1.6 12.5 3.1V9.9C12.5 11.4 13.14 12 14.73 12H18.77C20.36 12 21 11.4 21 9.9Z"
-                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path opacity="0.4"
-                                    d="M21 18.9V17.1C21 15.6 20.36 15 18.77 15H14.73C13.14 15 12.5 15.6 12.5 17.1V18.9C12.5 20.4 13.14 21 14.73 21H18.77C20.36 21 21 20.4 21 18.9Z"
-                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path
-                                    d="M9.5 12.1V18.9C9.5 20.4 8.86 21 7.27 21H3.23C1.64 21 1 20.4 1 18.9V12.1C1 10.6 1.64 10 3.23 10H7.27C8.86 10 9.5 10.6 9.5 12.1Z"
-                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path opacity="0.4"
-                                    d="M9.5 3.1V4.9C9.5 6.4 8.86 7 7.27 7H3.23C1.64 7 1 6.4 1 4.9V3.1C1 1.6 1.64 1 3.23 1H7.27C8.86 1 9.5 1.6 9.5 3.1Z"
-                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <p class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base font-normal tracking-[0.4px]">
-                                Dashboard
-                            </p>
-                        </a>
-                        <a class="flex xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px] bg-[rgba(57,118,101,0.15)] group items-center"
-                            href="/index.html">
-                            <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M2 2V19C2 20.66 3.34 22 5 22H22" stroke="#397665" stroke-width="1.5"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                <path opacity="0.4"
-                                    d="M5 17L9.59 11.64C10.35 10.76 11.7 10.7 12.52 11.53L13.47 12.48C14.29 13.3 15.64 13.25 16.4 12.37L21 7"
-                                    stroke="#397665" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <p
-                                class="xl:text-[20px] lg:text-[19px] md:text-[17px] text-[#397665] font-normal tracking-[0.4px]">
-                                Report</p>
-                        </a>
-                        <a class="flex xl:gap-[17px] lg:gap-[15px] w-full xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:gap-[10px] md:pl-[8px] md:py-[9px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group items-center transition duration-800 ease-in-out"
-                            href="./billing.html">
-                            <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <g opacity="0.4">
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        d="M10.7501 16.86V18.89C10.7501 20.61 9.15011 22 7.18011 22C5.21011 22 3.6001 20.61 3.6001 18.89V16.86C3.6001 18.58 5.20011 19.8 7.18011 19.8C9.15011 19.8 10.7501 18.57 10.7501 16.86Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        d="M10.7498 14.11C10.7498 14.61 10.6098 15.07 10.3698 15.47C9.77981 16.44 8.5698 17.05 7.1698 17.05C5.7698 17.05 4.55979 16.43 3.96979 15.47C3.72979 15.07 3.58984 14.61 3.58984 14.11C3.58984 13.25 3.98982 12.48 4.62982 11.92C5.27982 11.35 6.16979 11.01 7.15979 11.01C8.14979 11.01 9.03982 11.36 9.68982 11.92C10.3498 12.47 10.7498 13.25 10.7498 14.11Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        d="M10.7501 14.11V16.86C10.7501 18.58 9.15011 19.8 7.18011 19.8C5.21011 19.8 3.6001 18.57 3.6001 16.86V14.11C3.6001 12.39 5.20011 11 7.18011 11C8.17011 11 9.06014 11.35 9.71014 11.91C10.3501 12.47 10.7501 13.25 10.7501 14.11Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </g>
-                                <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                    d="M22 10.97V13.03C22 13.58 21.56 14.03 21 14.05H19.0399C17.9599 14.05 16.97 13.26 16.88 12.18C16.82 11.55 17.0599 10.96 17.4799 10.55C17.8499 10.17 18.36 9.95001 18.92 9.95001H21C21.56 9.97001 22 10.42 22 10.97Z"
-                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                    d="M2 10.5V8.5C2 5.78 3.64 3.88 6.19 3.56C6.45 3.52 6.72 3.5 7 3.5H16C16.26 3.5 16.51 3.50999 16.75 3.54999C19.33 3.84999 21 5.76 21 8.5V9.95001H18.92C18.36 9.95001 17.85 10.17 17.48 10.55C17.06 10.96 16.82 11.55 16.88 12.18C16.97 13.26 17.96 14.05 19.04 14.05H21V15.5C21 18.5 19 20.5 16 20.5H13.5"
-                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <p
-                                class="text-[#3D3D3D] group-hover:text-[#397665] xl:text-xl lg:text-lg md:text-base font-normal tracking-[0.4px] transition duration-800 ease-in-out">
-                                Payments</p>
-                        </a>
-                        <div class="relative w-full">
-                            <input type="checkbox" id="setting" class="peer hidden" />
-                            <label for="setting"
-                                class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit transition duration-800 ease-in-out">
-                                <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]" xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        opacity="0.34"
-                                        d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p
-                                    class="text-[#3D3D3D] group-hover:text-[#397665] xl:text-xl lg:text-lg md:text-base tracking-[0.4px] transition duration-800 ease-in-out">
-                                    Settings
-                                </p>
-                            </label>
-                            <div
-                                class="hidden peer-checked:block absolute top-13 left-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 w-full">
-                                <ul class="space-y-[10px]">
-                                    <li class="group"><a href="#"
-                                            class="flex items-center gap-[8px] text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out">
-                                            <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]"
-                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                viewBox="0 0 24 24" fill="none">
-                                                <path
-                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                                    opacity="0.34"
-                                                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
-                                                    stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                                    d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z"
-                                                    stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg> Settings</a></li>
-                                    <li class="group"><a href="#"
-                                            class="flex items-center gap-[8px] text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="17" height="22"
-                                                viewBox="0 0 15 25" fill="none">
-                                                <path
-                                                    class="group-hover:fill-[#397665] transition duration-800 ease-in-out"
-                                                    fill-rule=" evenodd" clip-rule="evenodd"
-                                                    d="M15 19.8048C15 23.8359 10.7197 24.3019 7.50095 24.3019L7.27061 24.3016C5.21989 24.2952 0 24.128 0 19.7804C0 15.8316 4.10829 15.3038 7.30254 15.2839L7.73128 15.2836C9.78186 15.29 15 15.4572 15 19.8048ZM7.50095 17.1179C3.46591 17.1179 1.42045 18.0131 1.42045 19.7804C1.42045 21.5635 3.46591 22.4673 7.50095 22.4673C11.535 22.4673 13.5795 21.5721 13.5795 19.8048C13.5795 18.0217 11.535 17.1179 7.50095 17.1179ZM7.50095 0C10.2737 0 12.5284 2.91323 12.5284 6.49423C12.5284 10.0752 10.2737 12.9872 7.50095 12.9872H7.47064C4.7036 12.9762 2.46212 10.0618 2.47156 6.49056C2.47156 2.91323 4.72727 0 7.50095 0ZM7.50095 1.74647C5.47348 1.74647 3.82384 3.87575 3.82384 6.49423C3.81724 9.10415 5.45455 11.2322 7.47349 11.242L7.50095 12.1152V11.242C9.52746 11.242 11.1761 9.11149 11.1761 6.49423C11.1761 3.87575 9.52746 1.74647 7.50095 1.74647Z"
-                                                    fill="#3D3D3D" />
-                                            </svg> User Profile</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="relative w-full">
-                            <input type="checkbox" id="more" class="peer hidden" />
-                            <label for="more"
-                                class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit transition duration-800 ease-in-out">
-                                <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px] " xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        d="M17.5399 8.31001C18.8986 8.31001 20 7.20863 20 5.85001C20 4.49139 18.8986 3.39001 17.5399 3.39001C16.1813 3.39001 15.08 4.49139 15.08 5.85001C15.08 7.20863 16.1813 8.31001 17.5399 8.31001Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        opacity="0.4"
-                                        d="M6.46001 8.31001C7.81863 8.31001 8.92 7.20863 8.92 5.85001C8.92 4.49139 7.81863 3.39001 6.46001 3.39001C5.10139 3.39001 4 4.49139 4 5.85001C4 7.20863 5.10139 8.31001 6.46001 8.31001Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        opacity="0.4"
-                                        d="M17.5399 20.61C18.8986 20.61 20 19.5086 20 18.15C20 16.7914 18.8986 15.69 17.5399 15.69C16.1813 15.69 15.08 16.7914 15.08 18.15C15.08 19.5086 16.1813 20.61 17.5399 20.61Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                        d="M6.46001 20.61C7.81863 20.61 8.92 19.5086 8.92 18.15C8.92 16.7914 7.81863 15.69 6.46001 15.69C5.10139 15.69 4 16.7914 4 18.15C4 19.5086 5.10139 20.61 6.46001 20.61Z"
-                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <p
-                                    class="text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out xl:text-[xl lg:text-lg md:text-base font-normal tracking-[0.4px]">
-                                    More</p>
-                            </label>
-                            <div
-                                class="hidden peer-checked:block absolute top-12 left-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 w-full">
-                                <ul class="space-y-2">
-                                    <li class="group"><a href="./login.html"
-                                            class="text-[#3D3D3D] text-sm flex items-center gap-[5px] group-hover:text-[#397665] transition duration-800 ease-in-out">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19"
-                                                viewBox="0 0 22 19" fill="none">
-                                                <path
-                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                                    d=" M14.0204 5.24357V4.38622C14.0204 2.51622 12.3314 1 10.2483
-                                                    1H5.2582C3.17616 1 1.48718 2.51622 1.48718 4.38622V14.6138C1.48718
-                                                    16.4838 3.17616 18 5.2582 18H10.2586C12.3355 18 14.0204 16.4884
-                                                    14.0204 14.6239V13.7574" stroke="#3D3D3D" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                                    d="M20.9742 9.5H8.64882" stroke="#3D3D3D" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
-                                                    d="M17.9769 6.82104L20.974 9.49969L17.9769 12.1793" stroke="#3D3D3D"
-                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg> Logout</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full flex flex-col lg:gap-[16px] md:gap-[12px]">
-                    <h2 class="text-[#3D3D3D] xl:text-2xl lg:text-xl md:text-lg font-normal tracking-[0.48px]">Filter
-                    </h2>
-                    <form
-                        class="flex flex-col xl:gap-[30px] lg:gap-[27px] md:gap-[22px] bg-[rgba(181,166,66,0.15)] xl:p-[20px_15px] lg:p-[18px_14px] md:p-[15px_12px] rounded-xl"
-                        action="Date">
-                        <div class="flex flex-col gap-[13px] items-center w-full">
-                            <input
-                                class="input-field date lg:text-[14px] text-[13px] w-full text-[#3D3D3D] bg-white lg:py-[12px] lg:px-[12px_9px] md:py-[10px] md:px-[10px_7px] rounded-lg outline-none"
-                                type="date">
-                            <p class="md:text-sm text-[#3D3D3D] font-normal tracking-[0.28px]">To</p>
-                            <input
-                                class="input-field date lg:text-[14px] text-[13px] w-full text-[#3D3D3D] bg-white lg:py-[12px] lg:px-[12px_9px] md:py-[10px] md:px-[10px_7px] rounded-lg outline-none"
-                                type="date">
-                        </div>
-                        <div
-                            class="flex justify-between bg-white xl:p-[12px] lg:p-[11px] md:p-[10px] rounded-lg items-center">
-                            <p class=" text-[#3D3D3D] md:text-sm w-full">
-                                Quick Filter</p> <img class="lg:w-[16px] md:w-[12px]" src="/Assets/SVG/select.svg"
-                                alt="slct">
-                        </div>
-                    </form>
-                </div>
+            class="bg-[url('./Assets/png/login-bg.png')] bg-left bg-[length:100%_100%] bg-no-repeat xl:w-[43%] md:w-[40%] flex items-center md:pr-[10px] w-full justify-center md:justify-start md:py-[0] sm:py-[45px] py-[40px]">
+            <div
+                class="bg-[url('/Assets/png/login-logo-bg.png')] bg-left bg-[length:100%_100%] bg-no-repeat xl:max-w-[470px] lg:max-w-[380px] md:max-w-[350px] min-[480px]:max-w-[300px] max-w-[285px] w-full flex justify-center xl:py-[61px] lg:py-[55px] md:py-[50px] sm:py-[30px] min-[480px]:py-[25px] py-[23px]">
+                <a href="./index.html">
+                    <img class="xl:w-[256px] lg:w-[200px] md:w-[185px] sm:w-[165px] min-[480px]:w-[145px]"
+                        src="./Assets/SVG/Logo.svg" alt="logo" class="max-w-full h-auto" />
+                </a>
             </div>
         </div>
-        <div class="w-full">
-            <div class="flex flex-col xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] gap-[16px]">
-                <div class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
-                    <div
-                        class="w-full flex justify-between bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
-                        <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
-                            Total
-                            Income</p>
-                        <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
-                            £ 1673
-                        </p>
-                    </div>
-                    <div
-                        class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px] xl:py-[0_35px] lg:py-[0_32px] md:py-[0_28px] sm:py-[0_25px] py-[0_20px]">
-                        <div
-                            class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                            <p
-                                class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                Sales</p>
-                            <p
-                                class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-sm">
-                                £ 7726.06 <img class="lg:w-[14px] md:w-[11px] sm:w-[10px] w-[9px]"
-                                    src="./Assets/SVG/select.svg" alt="slct">
-                            </p>
-                        </div>
-                        <div class=" overflow-x-scroll [scrollbar-width:none] overflow-hidden
-                        overscroll-x-contain">
-                            <div class="min-w-[620px]">
-                                <div class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px]">
-                                    <div
-                                        class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
-                                        <p
-                                            class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                            Sale
-                                        </p>
-                                        <p
-                                            class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] ms:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                            £ 7726.06 <img class="lg:w-[4px] md:h-[14px] sm:h-[12px] "
-                                                src="./Assets/SVG/dot.svg" alt=".">
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[330px] max-w-[340px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                17 July, 2020
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Specbavers
-                                                Optical
-                                                Group Ltd</p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[270px] max-w-[230px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Invoice Receipt
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ 1000.00</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[330px] max-w-[340px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                29 April, 2020
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Specbavers
-                                                Optical
-                                                Group Ltd</p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[270px] max-w-[230px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Invoice Receipt
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ 3255.20</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[330px] max-w-[340px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                05 March, 2020
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Specbavers
-                                                Optical
-                                                Group Ltd</p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[270px] max-w-[230px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Invoice Receipt
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ 1398.36</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[330px] max-w-[340px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                01 July, 2020
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Specbavers
-                                                Optical
-                                                Group Ltd</p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[270px] max-w-[230px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Invoice Receipt
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ 1300.00</p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[330px] max-w-[340px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                05 May, 2020
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Specbavers
-                                                Optical
-                                                Group Ltd</p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[270px] max-w-[230px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Invoice Receipt
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ 375.00</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="xl:w-[57%] md:w-[60%] w-full flex justify-center">
+            <div
+                class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[8px] lg:my-[120px] md:my-[130px] md:mx-[30px] sm:my-[50px] my-[45px] mx-[16px] relative">
+                <div class="absolute top-[0] right-[0]">
+                    <img class="md:w-[120px] sm:w-[95px] w-[75px]" src="./Assets/png/login-pos.png" alt="">
                 </div>
-                <div class="flex flex-col lg:gap-[20px] md:gap-[18px] sm:gap-[15px] gap-[12px]">
-                    <div
-                        class="w-full flex justify-between bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
-                        <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
-                            Total
-                            Expense</p>
-                        <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
-                            £
-                            -6052.55</p>
-                    </div>
-                    <div
-                        class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col sm:gap-[10px] xl:py-[0_35px]">
-                        <div>
-                            <div
-                                class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                                <p
-                                    class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                    Sales</p>
-                                <p
-                                    class="flex md:gap-[15px] text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px] items-center">
-                                    £ -545.00
-                                    <img class="lg:w-[14px]" src="./Assets/SVG/select.svg" alt="slct">
-                                </p>
-                            </div>
-                            <div class="overflow-x-scroll [scrollbar-width:none] overflow-hidden
-                            overscroll-x-contain">
-                                <div
-                                    class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] min-w-[620px]">
-                                    <div
-                                        class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
-                                        <p
-                                            class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                            Sale
-                                        </p>
-                                        <p
-                                            class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]]">
-                                            £ -545.00 <img src="./Assets/SVG/dot.svg" alt=".">
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] xl:gap-[30px] md:gap-[15px] border-t border-[#868686] justify-between">
-                                        <div
-                                            class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                02 May, 20
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                AWS May</p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Computer
-                                                Software
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ -545.00
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div
+                    class="flex flex-col lg:max-w-[560px] md:max-w-[500px] min-[480px]:max-w-[450px] xl:px-[66px] xl:py-[50px] lg:px-[55px] lg:py-[45px] md:px-[40px] md:py-[35px] sm:px-[32px] sm:py-[28px] min-[480px]:px-[25px] min-[480px]:py-[25px] px-[16px] py-[22px]">
+
+                    <div class="flex flex-col xl:gap-[51px] lg:gap-[43px] md:gap-[38px] sm:gap-[30px] gap-[20px]">
+                        <div class="flex flex-col lg:gap-[13px] md:gap-[11px]">
+                            <h1 class="text-[#3D3D3D] xl:text-[48px] lg:text-[42px] md:text-[35px] sm:text-[32px] text-[28px] tracking-[1px]
+                            ">Welcome back,</h1>
+                            <p
+                                class="text-[#868686] lg:text-[16px] md:text-[15px] text-[14px] font-light tracking-[0.32px]">
+                                Lorem
+                                ipsum dolor sit
+                                amet,
+                                consectetur
+                                adipiscing
+                                elit. Ut tristique
+                                consequat
+                                euismod at
+                                sed
+                                lorem.</p>
                         </div>
                         <div>
-                            <div
-                                class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                                <p
-                                    class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                    Office
-                                    Costs</p>
+                            <form action="login Detail">
                                 <div
-                                    class="relative md:max-w-[265px] min-[380px]:max-w-[230px] max-w-[153px] w-full justify-end flex">
-                                    <input type="checkbox" id="5125" class="peer hidden" />
-                                    <label for="5125"
-                                        class="flex gap-[15px] text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px] items-center cursor-pointer w-fit">
-                                        £ -5125.00
-                                        <img class="lg:w-[14px]" src="./Assets/SVG/select.svg" alt="slct">
-                                    </label>
+                                    class="flex flex-col xl:gap-[31px] lg:gap-[28px] md:gap-[25px] sm:gap-[23px] gap-[20px]">
                                     <div
-                                        class="hidden peer-checked:block absolute top-10 right-[-15px] bg-white shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-lg md:p-[15px] min-[380px]:p-[13px] p-[8px] z-50 md:max-w-[265px] max-w-[230px] w-full">
-                                        <div class="bg-[#E9E4C6] rounded-[10px]">
-                                            <h3
-                                                class="text-[#B5A642] bg-white md:p-[10px_13px_11px_23px] min-[380px]:p-[8px_10px_9px_12px] p-[5px_8px] rounded-[10px] gap-[11px] flex items-center lg:text-base md:text-[15px] text-sm font-normal tracking-[0.32px]">
-                                                Add
-                                                to master
-                                                category
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7"
-                                                    viewBox="0 0 14 7" fill="none">
-                                                    <path
-                                                        d="M13 1L8.06061 5.59317C7.47727 6.13561 6.52273 6.13561 5.93939 5.59317L1 1"
-                                                        stroke="#B5A642" stroke-width="1.5" stroke-miterlimit="10"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            </h3>
-                                            <div class="lg:px-[12px] md:px-[10px] px-[8px]">
-                                                <p
-                                                    class="text-[#3D3D3D] lg:text-sm text-[13px] font-normal tracking-[0.32px] lg:py-[10px] md:py-[8px] py-[5px]">
-                                                    Office costs</p>
-                                                <p
-                                                    class="text-[#3D3D3D] lg:text-sm text-[13px] font-normal tracking-[0.32px] border-y border-[#868686] lg:py-[10px] md:py-[8px] py-[5px]">
-                                                    Staff
-                                                    costs</p>
-                                                <p
-                                                    class="text-[#3D3D3D] lg:text-sm text-[13px] font-normal tracking-[0.32px] lg:py-[10px] md:py-[8px] py-[5px]">
-                                                    Sales</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="overflow-x-scroll [scrollbar-width:none] overflow-hidden
-                            overscroll-x-contain">
-                                <div
-                                    class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] min-w-[620px]">
-                                    <div
-                                        class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
-                                        <p
-                                            class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                            Internet &
-                                            Telephone</p>
-                                        <p
-                                            class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                            £ -5000.00 <img src="./Assets/SVG/dot.svg" alt=".">
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
+                                        class="flex flex-col xl:gap-[32px] lg:gap-[28px] md:gap-[25px] sm:gap-[22px] gap-[18px]">
                                         <div
-                                            class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                29 April,
-                                                20
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Redsquid
-                                            </p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Internet &
-                                                Telephone Inc E416 67VAT</p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ -545.00
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] lg:py-[10px] border-t border-[#868686] justify-between">
-                                        <div
-                                            class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                02 May, 20
-                                            </p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Redsquid
-                                            </p>
-                                        </div>
-                                        <div
-                                            class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                Internet &
-                                                Telephone Inc E416 67VAT</p>
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                £ -545.00
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px] xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] min-w-[620px]">
-                                    <p
-                                        class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                        Rent
-                                    </p>
-                                    <p
-                                        class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]lg:pr-[7px]">
-                                        £ -5000.00 <img src="./Assets/SVG/dot.svg" alt=".">
-                                    </p>
-                                </div>
-                                <div class="min-w-[620px]">
-                                    <div class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px]">
-                                        <div
-                                            class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
-                                            <p
-                                                class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                                Web Hosting
-                                            </p>
-                                            <p
-                                                class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
-                                                £ -382.55 <img src="./Assets/SVG/dot.svg" alt=".">
-                                            </p>
-                                        </div>
-                                        <div
-                                            class="flex w-full xl:gap-[30px] md:gap-[15px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] lg:py-[10px] border-t border-[#868686] justify-between">
+                                            class="flex flex-col xl:gap-[39px] lg:gap-[32px] md:gap-[28px] sm:gap-[25px] gap-[20px]">
                                             <div
-                                                class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
-                                                <p
-                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                    27
-                                                    April,
-                                                    20
-                                                </p>
-                                                <p
-                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                    Redsquid
-                                                </p>
+                                                class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                <label
+                                                    class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
+                                                    for="Mail">E-mail</label>
+                                                <input
+                                                    class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                    type="email" name="mail" id="Mail"
+                                                    placeholder="Rootsaccounting12@gmail.com" required>
+                                                <img class="xl:w-[30px] md:w-[24px] sm:w-[20px] w-[17px]"
+                                                    src="./Assets/SVG/@.svg" alt="@">
                                             </div>
                                             <div
-                                                class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
-                                                <p
-                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                    Web
-                                                    Hosting
-                                                    Inc £ -178.40 VAT
-                                                </p>
-                                                <p
-                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
-                                                    £
-                                                    -178.40
-                                                </p>
+                                                class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[23px] xl:px-[28px_20px] flex justify-between items-center lg:py-[20px] lg:px-[25px_17px] md:py-[15px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                <label
+                                                    class="absolute lg:top-[-17px] left-[30px] md:top-[-15px] bg-white md:p-[2px_14px_0_10px] p-[2px_11px_0_8px] top-[-13px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
+                                                    for="Password">Password</label>
+                                                <input
+                                                    class="border-0 xl:placeholder:text-[105px] placeholder:text-[#C4C4C4] placeholder:font-normal xl:placeholder:tracking-[-8px] w-full outline-none lg:placeholder:text-[85px] md:placeholder:text-[80px] sm:placeholder:text-[75px] placeholder:text-[60px] placeholder:tracking-[-6px]"
+                                                    type="password" name="password" id="Password" placeholder="........"
+                                                    required>
+                                                <img class="xl:w-[25px] md:w-[22px] sm:w-[19px] w-[16px]"
+                                                    src="./Assets/SVG/eyes.svg" alt="eyeys">
+                                            </div>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <div class="flex items-center sm:gap-[12px] gap-[8px]">
+                                                <input
+                                                    class="rounded-[5px] transform xl:scale-[1.8] lg:scale-[1.6] md:scale-[1.4] sm:scale-[1.3] scale-[1.2]"
+                                                    type="checkbox" name="remember" id="checkbox">
+                                                <label
+                                                    class="text-[#868686] lg:text-[18px] md:text-[16px] sm:text-[15px] text-[13px] font-normal tracking-[0.36px]"
+                                                    for="checkbox">Remember Me</label>
+                                            </div>
+                                            <div>
+                                                <a class="text-[#387665] lg:text-[18px] md:text-[16px] sm:text-[15px] text-[13px] font-normal tracking-[0.36px]"
+                                                    href="#">Forgot Password?</a>
                                             </div>
                                         </div>
                                     </div>
+                                    <div
+                                        class="flex flex-col xl:gap-[30px] lg:gap-[28px] md:gap-[25px] sm:gap-[23px] gap-[20px] items-center">
+                                        <div class="flex justify-center items-center">
+                                            <a class="bg-[#387665] rounded-[10px] text-white lg:text-[18px] md:text-[17px] sm:text-[16px] text-[15px] font-medium tracking-[0.36px] xl:px-[106px] lg:py-[12px] lg:px-[95px] md:py-[11px] md:px-[90px] sm:py-[10px] sm:px-[80px] py-[9px] px-[70px]"
+                                                href="./income_expenses.html">Login</a>
+                                        </div>
+                                        <div>
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-[20px] lg:text-[19px] md:text-[18px] sm:text-[17px] text-[15px] font-normal tracking-[0.4px]">
+                                                Don’t
+                                                Have An Account? <a class="text-[#387665] font-medium"
+                                                    href="./singup.html">Sign
+                                                    up</a></p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

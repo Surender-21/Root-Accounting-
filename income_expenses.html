@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Billing</title>
+    <title>Income and expenses</title>
     <link rel="stylesheet" href="./Assets/style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -14,8 +14,8 @@
         class="flex xl:py-[30px] lg:py-[27px] md:py-[25px] xl:px-[25px_30px] md:px-[18px_20px] lg:px-[22px_27px] xl:gap-[35px] lg:gap-[30px] sm:py-[18px] sm:px-[20px] px-[16px] py-[12px] md:gap-[25px] sm:gap-[22px] gap-[10px] flex-col lg:flex-row relative">
         <div class="flex justify-between items-center block lg:hidden">
             <div>
-                <a href="/index.html"> <img class="md:w-[120px] sm:w-[110px] w-[95px]" src="./Assets/SVG/Logo.svg"
-                        alt="logo"></a>
+                <a href="./income_expenses.html"> <img class="md:w-[120px] sm:w-[110px] w-[95px]"
+                        src="/Assets/SVG/Logo.svg" alt="logo"></a>
             </div>
             <div>
                 <div class="w-full">
@@ -31,7 +31,7 @@
                         class="hidden peer-checked:block absolute top-0 right-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 md:max-w-[300px] sm:max-w-[250px] max-w-[200px] w-full h-screen">
                         <div class="flex flex-col gap-[10px]">
                             <div>
-                                <a href="/index.html">
+                                <a href="/income_expenses.html">
                                     <img class="md:w-[100px] sm:w-[90px] w-[80px]" src="./Assets/SVG/Logo.svg"
                                         alt="logo">
                                 </a>
@@ -40,7 +40,7 @@
                                 <ul class="space-y-[10px] mb-4">
                                     <li><a href="#" class="text-[#3D3D3D] hover:text-[#397665]">Setting</a></li>
                                     <li><a href="#" class="text-[#3D3D3D] hover:text-[#397665]">User Profile</a></li>
-                                    <li><a href="./login.html" class="text-[#3D3D3D] hover:text-[#397665]">Logout</a>
+                                    <li><a href="./index.html" class="text-[#3D3D3D] hover:text-[#397665]">Logout</a>
                                     </li>
                                 </ul>
                             </div>
@@ -60,7 +60,7 @@
             <div class="flex flex-col xl:gap-[75px] lg:gap-[70px] md:gap-[50px]">
                 <div class="flex flex-col items-center">
                     <div>
-                        <a href="/index.html"><img class="xl:w-[180px] lg:w-[160px] md:w-[125px]"
+                        <a href="./income_expenses.html"><img class="xl:w-[180px] lg:w-[160px] md:w-[125px]"
                                 src="./Assets/SVG/Logo.svg" alt="logo"></a>
                     </div>
                     <div class="xl:my-[18px_20px] lg:my-[15px_18px] md:my-[12px_15px]">
@@ -108,7 +108,7 @@
                                 Report</p>
                         </a>
                         <a class="flex xl:gap-[17px] lg:gap-[15px] w-full xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:gap-[10px] md:pl-[8px] md:py-[9px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group items-center transition duration-800 ease-in-out"
-                            href="/">
+                            href="./billing.html">
                             <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <g opacity="0.4">
@@ -275,312 +275,48 @@
             </div>
         </div>
         <div class="w-full">
-            <div class="w-full flex flex-col xl:gap-[30px] lg:gap-[25px] md:gap-[22px] sm:gap-[18px] gap-[13px]">
-                <div
-                    class="w-full flex xl:gap-[30px] lg:gap-[25px] md:gap-[20px] sm:gap-[15px] gap-[12px] md:flex-row flex-col">
+            <div class="flex flex-col xl:gap-[30px] lg:gap-[26px] md:gap-[22px] sm:gap-[18px] gap-[16px]">
+                <div class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
                     <div
-                        class="flex flex-col xl:gap-[20px] lg:gap-[18px] md:gap-[16px] sm:gap-[12px] gap-[10px] w-full">
-                        <div
-                            class=" w-full bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
-                            <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[2%]">
-                                My Subscription</p>
-                        </div>
-                        <div>
-                            <div
-                                class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px] sm:gap-[8px] gap-[5px] lg:py-[0_25px] md:py-[0_20px] sm:py-[0_18px] py-[0_16px]">
-                                <div
-                                    class="rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                                    <p
-                                        class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                        Choose Subscription</p>
-                                </div>
-                                <div class="xl:px-[30px] lg:px-[26px] md:px-[22px] sm:px-[18px] px-[16px]">
-                                    <div
-                                        class="flex xl:gap-[23px] lg:gap-[20px] md:gap-[18px] sm:gap-[15px] gap-[12px] pl-[5px] xl:pt-[10px] md:pt-[7px] sm:pt-[5px] pt-[3px]">
-                                        <div class="flex items-center gap-[12px]">
-                                            <input class="transform lg:scale-[1.5]" type="checkbox" name="slry"
-                                                id="month">
-                                            <label
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] text-[#3D3D3D]"
-                                                for="month">£5
-                                                Monthly</label>
-                                        </div>
-                                        <div class="flex items-center md:gap-[12px]">
-                                            <input class="transform lg:scale-[1.5]" type="checkbox" name="pesa"
-                                                id="year">
-                                            <label
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] text-[#3D3D3D]"
-                                                for="year">£54
-                                                Yearly</label>
-                                        </div>
-                                    </div>
-                                    <div class="lg:py-[18px_16px] md:py-[15px_12px] sm:py-[12px_10px] py-[10px_8px]">
-                                        <a class="underline text-[#397665] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px]"
-                                            href="#">Apply Referral Code</a>
-                                    </div>
-                                    <div class="flex flex-col gap-[11px]">
-                                        <div class="flex w-full items-center justify-between">
-                                            <p
-                                                class="whitespace-nowrap xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.48px]">
-                                                Amount due</p>
-                                            <div class="pt-[8px] px-[10px]">
-                                                <img class="w-full flex h-[2px]" src="/Assets/SVG/Line 28.svg"
-                                                    alt="line">
-                                            </div>
-                                            <p
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] whitespace-nowrap">
-                                                £
-                                                54.00</p>
-                                        </div>
-                                        <div class="flex w-full items-center justify-between">
-                                            <p
-                                                class="whitespace-nowrap xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.48px]">
-                                                Referral discount</p>
-                                            <div class="pt-[8px] px-[10px]">
-                                                <img class="w-full flex h-[2px]" src="/Assets/SVG/Line 28.svg"
-                                                    alt="line">
-                                            </div>
-                                            <p
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] whitespace-nowrap">
-                                                £
-                                                -0.00</p>
-                                        </div>
-                                        <div class="flex w-full items-center justify-between">
-                                            <p
-                                                class="whitespace-nowrap xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.48px]">
-                                                20% VAT</p>
-                                            <div class="pt-[8px] px-[10px]">
-                                                <img class="w-full flex h-[2px]" src="/Assets/SVG/Line 28.svg"
-                                                    alt="line">
-                                            </div>
-                                            <p
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] whitespace-nowrap">
-                                                £
-                                                10.80</p>
-                                        </div>
-                                        <div class="flex w-full items-center justify-between pt-[2px]">
-                                            <p
-                                                class="whitespace-nowrap xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.48px]">
-                                                Payment due Mar 19,2021</p>
-                                            <p
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] whitespace-nowrap">
-                                                £
-                                                64.80</p>
-                                        </div>
-                                    </div>
-                                    <div class="lg:py-[21px_17px] md:py-[18px_15px] sm:py-[15px_12px] py-[12px_10px]">
-                                        <a class="underline text-[#397665] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px]"
-                                            href="#">Apply Referral Code</a>
-                                    </div>
-                                </div>
-                                <div
-                                    class="rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                                    <p
-                                        class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                        Payment Information</p>
-                                </div>
-                                <div
-                                    class="xl:px-[30px] lg:px-[26px] md:px-[22px] sm:px-[18px] px-[16px] xl:pt-[10px] lg:pt-[8px]">
-                                    <div class="flex flex-col lg:gap-[20px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
-                                        <input
-                                            class="w-full bg-[rgba(181,166,66,0.1)] outline-none lg:py-[12px_9px] md:py-[10px_8px] sm:py-[8px_7px] py-[6px] lg:ps-[20px] md:ps-[18px] sm:ps-[16px] ps-[12px] rounded-[10px] placeholder:text-[rgba(61,61,61,0.25)] text-[#3D3D3D] placeholder:font-normal lg:placeholder:text-base"
-                                            type="text" placeholder="Card holder name">
-                                        <input
-                                            class="w-full bg-[rgba(181,166,66,0.1)] outline-none lg:py-[12px_9px] md:py-[10px_8px] sm:py-[8px_7px] py-[6px] lg:ps-[20px] md:ps-[18px] sm:ps-[16px] ps-[12px] rounded-[10px] placeholder:text-[rgba(61,61,61,0.25)] text-[#3D3D3D] placeholder:font-normal lg:placeholder:text-base"
-                                            type="text" placeholder="Card holder name">
-                                    </div>
-                                    <div
-                                        class="flex lg:gap-[20px] md:gap-[15px] sm:gap-[12px] gap-[10px] md:pt-[15px] sm:pt-[12px] pt-[10px] flex-col xl:flex-row">
-                                        <input
-                                            class="w-full bg-[rgba(181,166,66,0.1)] outline-none lg:py-[12px_9px] md:py-[10px_8px] sm:py-[8px_7px] py-[6px] lg:ps-[20px] md:ps-[18px] sm:ps-[16px] ps-[12px] rounded-[10px] placeholder:text-[rgba(61,61,61,0.25)] text-[#3D3D3D] placeholder:font-normal lg:placeholder:text-base"
-                                            type="text" placeholder="Expiry date">
-                                        <input
-                                            class="w-full bg-[rgba(181,166,66,0.1)] outline-none lg:py-[12px_9px] md:py-[10px_8px] sm:py-[8px_7px] py-[6px] lg:ps-[20px] md:ps-[18px] sm:ps-[16px] ps-[12px] rounded-[10px] placeholder:text-[rgba(61,61,61,0.25)] text-[#3D3D3D] placeholder:font-normal lg:placeholder:text-base"
-                                            type="text" placeholder="Cvv">
-                                    </div>
-                                    <div
-                                        class="w-full flex justify-center xl:pt-[24px] lg:pt-[21px] md:pt-[18px] sm:pt-[15px] pt-[13px]">
-                                        <button
-                                            class="border-0 bg-[#397665] xl:text-[18px] lg:text-base md:text-[15px] text-sm rounded-[10px] text-white md:py-[10px] sm:py-[9px] py-[8px] lg:max-w-[225px] md:max-w-[200px] sm:max-w-[185px] max-w-[165px] w-full hover:shadow-[0px_20px_40px_-15px_#397665] cursor-pointer transition ease-in-out duration-800">Pay
-                                            £
-                                            64.80</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full">
-                        <div
-                            class="flex flex-col xl:gap-[20px] lg:gap-[18px] md:gap-[16px] sm:gap-[12px] gap-[10px] w-full">
-                            <div
-                                class="w-full bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
-                                <p
-                                    class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[2%]">
-                                    Referral Scheme</p>
-                            </div>
-                            <div>
-                                <div
-                                    class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px] sm:gap-[8px] gap-[5px] lg:py-[0_25px] md:py-[0_20px] sm:py-[0_18px] py-[0_16px]">
-                                    <div
-                                        class="rounded-[14px] flex items-center justify-between bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                                        <p
-                                            class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                            My Referral Code :</p>
-                                        <p
-                                            class="text-[#3D3D3D] flex items-center lg:gap-[10px] sm:gap-[8px] gap-[5px] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-bold tracking-[0.4px]">
-                                            Ocf6bc45 <svg class="lg:w-[22px] md:w-[20px] sm:w-[18px] w-[16px]"
-                                                xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                                viewBox="0 0 22 22" fill="none">
-                                                <path
-                                                    d="M10.175 20.8542H6.325C2.74084 20.8542 1.14584 19.2592 1.14584 15.675V11.825C1.14584 8.24084 2.74084 6.64584 6.325 6.64584H10.175C13.7592 6.64584 15.3542 8.24084 15.3542 11.825V15.675C15.3542 19.2592 13.7592 20.8542 10.175 20.8542ZM6.325 8.02084C3.48334 8.02084 2.52084 8.98334 2.52084 11.825V15.675C2.52084 18.5167 3.48334 19.4792 6.325 19.4792H10.175C13.0167 19.4792 13.9792 18.5167 13.9792 15.675V11.825C13.9792 8.98334 13.0167 8.02084 10.175 8.02084H6.325Z"
-                                                    fill="#3D3D3D" />
-                                                <path
-                                                    d="M15.675 15.3542H14.6667C14.2908 15.3542 13.9792 15.0425 13.9792 14.6667V11.825C13.9792 8.98334 13.0167 8.02084 10.175 8.02084H7.33334C6.9575 8.02084 6.64584 7.70918 6.64584 7.33334V6.32501C6.64584 2.74084 8.24084 1.14584 11.825 1.14584H15.675C19.2592 1.14584 20.8542 2.74084 20.8542 6.32501V10.175C20.8542 13.7592 19.2592 15.3542 15.675 15.3542ZM15.3542 13.9792H15.675C18.5167 13.9792 19.4792 13.0167 19.4792 10.175V6.32501C19.4792 3.48334 18.5167 2.52084 15.675 2.52084H11.825C8.98334 2.52084 8.02084 3.48334 8.02084 6.32501V6.64584H10.175C13.7592 6.64584 15.3542 8.24084 15.3542 11.825V13.9792Z"
-                                                    fill="#3D3D3D" />
-                                            </svg>
-                                        </p>
-                                    </div>
-                                    <div class="xl:px-[30px] lg:px-[26px] md:px-[22px] sm:px-[18px] px-[16px]">
-                                        <div
-                                            class="flex items-centr md:gap-[14px] sm:gap-[12px] gap-[10px] lg:py-[20px] md:py-[16px] sm:py-[13px] py-[10px]">
-                                            <h3
-                                                class="text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px]">
-                                                Subscription Discount:</h3>
-                                            <p
-                                                class="text-[#B5A642] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-medium tracking-[0.48px]">
-                                                0%</p>
-                                        </div>
-                                        <div>
-                                            <div
-                                                class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px]">
-                                                <div
-                                                    class="flex rounded-[14px] bg-[rgba(181,166,66,0.15)] xl:px-[45px] lg:py-[10px_12px] lg:px-[38px] md:px-[32px] sm:px-[25px] px-[20px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                                                    <p
-                                                        class="text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-medium tracking-[0.4px] flex gap-[17px] xl:max-w-[190px] w-full">
-                                                        Date <img class="lg:w-[14px] md:w-[11px] sm:w-[10px] w-[9px]"
-                                                            src="./Assets/SVG/select.svg" alt="slt"></p>
-                                                    <p
-                                                        class="flex text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.4px] items-center font-medium">
-                                                        Organisation
-                                                    </p>
-                                                </div>
-                                                <div>
-                                                    <div
-                                                        class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[15px] px-[12px]">
-                                                        <div
-                                                            class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] xl:px-[15px] lg:px-[14px] md:px-[11px] sm:px-[8px] px-[4px]">
-                                                            <p
-                                                                class="xl:text-base lg:text-[15px] md:text-sm sm:text-[13px] text-[12px] font-normal tracking-[0.48px] w-full xl:max-w-[160px]">
-                                                                17 July, 2020</p>
-                                                            <p
-                                                                class="xl:text-base lg:text-[15px] md:text-sm sm:text-[13px] text-[12px] font-normal tracking-[0.48px] whitespace-nowrap">
-                                                                Corporate Business</p>
-                                                        </div>
-                                                        <div
-                                                            class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] xl:px-[15px] lg:px-[14px] md:px-[11px] sm:px-[8px] px-[4px]">
-                                                            <p
-                                                                class="xl:text-base lg:text-[15px] md:text-sm sm:text-[13px] text-[12px] font-normal tracking-[0.48px] w-full xl:max-w-[160px]">
-                                                                17 July, 2020</p>
-                                                            <p
-                                                                class="xl:text-base lg:text-[15px] md:text-sm sm:text-[13px] text-[12px] font-normal tracking-[0.48px] whitespace-nowrap">
-                                                                Corporate Business</p>
-                                                        </div>
-                                                        <div
-                                                            class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] xl:px-[15px] lg:px-[14px] md:px-[11px] sm:px-[8px] px-[4px]">
-                                                            <p
-                                                                class="xl:text-base lg:text-[15px] md:text-sm sm:text-[13px] text-[12px] font-normal tracking-[0.48px] w-full xl:max-w-[160px]">
-                                                                17 July, 2020</p>
-                                                            <p
-                                                                class="xl:text-base lg:text-[15px] md:text-sm sm:text-[13px] text-[12px] font-normal tracking-[0.48px] whitespace-nowrap">
-                                                                Corporate Business</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="xl:pt-[30] lg:pt-[20px] md:pt-[22px] sm:pt-[18px] pt-[16px]">
-                                            <ul
-                                                class="list-disc pl-5 flex flex-col lg:gap-[20px] md:gap-[17px] sm:gap-[12px] gap-[10px]">
-                                                <div class="flex flex-col">
-                                                    <li
-                                                        class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-medium tracking-[0.48px]">
-                                                        Introduce a Friend to Athena</li>
-                                                    <p
-                                                        class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] xl:ps-[22px]">
-                                                        If you someone who would benifit from Athena, Send them your
-                                                        referral
-                                                        code <span class="font-medium">(Ocf6bc45)</span></p>
-                                                </div>
-                                                <div class="flex flex-col">
-                                                    <li
-                                                        class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-medium tracking-[0.48px]">
-                                                        Get Discount on your subscription</li>
-                                                    <p
-                                                        class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] xl:ps-[22px]">
-                                                        if they up and subscribe, you both will receive a 10%
-                                                        subscriptiondiscount for as long as you’re Athena customers.</p>
-                                                </div>
-                                                <div class="flex flex-col">
-                                                    <li
-                                                        class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-medium tracking-[0.48px]">
-                                                        Keep refering and watch your discount add up</li>
-                                                    <p
-                                                        class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] xl:ps-[22px]">
-                                                        For each person and sign up and subscribes using you code,you’ll
-                                                        receive on additional 10% discount,until you’re using
-                                                        Athena for Trial</p>
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div class="flex flex-col lg:gap-[19px] md:gap-[16px] sm:gap-[14px] gap-[10px]">
-                    <div
-                        class="w-full bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
+                        class="w-full flex justify-between bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
                         <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
-                            Payment History</p>
+                            Total
+                            Income</p>
+                        <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
+                            £ 1673
+                        </p>
                     </div>
-                    <div class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px]">
+                    <div
+                        class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px] xl:py-[0_35px] lg:py-[0_32px] md:py-[0_28px] sm:py-[0_25px] py-[0_20px]">
                         <div
                             class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
-                            <div class="flex justify-between w-full">
-                                <p
-                                    class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                    ID</p>
-                                <p
-                                    class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-sm">
-                                    Date <img class="lg:w-[14px] md:w-[11px] sm:w-[10px] w-[9px]"
-                                        src="./Assets/SVG/select.svg" alt="slct">
-                                </p>
-                            </div>
-                            <div class="w-full max-w-[300px] flex justify-center">
-                                <p
-                                    class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-sm">
-                                    Payment method
-                                </p>
-                            </div>
-                            <div class="flex justify-between w-full">
-                                <p
-                                    class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                    Amount</p>
-                                <p
-                                    class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-sm">
-                                    Receipt
-                                </p>
-                            </div>
+                            <p
+                                class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
+                                Sales</p>
+                            <p
+                                class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-sm">
+                                £ 7726.06 <img class="lg:w-[14px] md:w-[11px] sm:w-[10px] w-[9px]"
+                                    src="./Assets/SVG/select.svg" alt="slct">
+                            </p>
                         </div>
                         <div class=" overflow-x-scroll [scrollbar-width:none] overflow-hidden
-                                        overscroll-x-contain">
+                        overscroll-x-contain">
                             <div class="min-w-[620px]">
                                 <div class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px]">
                                     <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] justify-between">
+                                        class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
+                                        <p
+                                            class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                            Sale
+                                        </p>
+                                        <p
+                                            class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] ms:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                            £ 7726.06 <img class="lg:w-[4px] md:h-[14px] sm:h-[12px] "
+                                                src="./Assets/SVG/dot.svg" alt=".">
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex w-full xl:gap-[30px] md:gap-[15px] gap-[10px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
                                         <div
                                             class="flex justify-between w-full xl:max-w-[475px] lg:max-w-[450px] md:max-w-[335px] sm:max-w-[330px] max-w-[340px]">
                                             <p
@@ -702,6 +438,247 @@
                                             <p
                                                 class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
                                                 £ 375.00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:gap-[20px] md:gap-[18px] sm:gap-[15px] gap-[12px]">
+                    <div
+                        class="w-full flex justify-between bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
+                        <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
+                            Total
+                            Expense</p>
+                        <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
+                            £
+                            -6052.55</p>
+                    </div>
+                    <div
+                        class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col sm:gap-[10px] xl:py-[0_35px]">
+                        <div>
+                            <div
+                                class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
+                                <p
+                                    class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
+                                    Sales</p>
+                                <p
+                                    class="flex md:gap-[15px] text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px] items-center">
+                                    £ -545.00
+                                    <img class="lg:w-[14px]" src="./Assets/SVG/select.svg" alt="slct">
+                                </p>
+                            </div>
+                            <div class="overflow-x-scroll [scrollbar-width:none] overflow-hidden
+                            overscroll-x-contain">
+                                <div
+                                    class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] min-w-[620px]">
+                                    <div
+                                        class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
+                                        <p
+                                            class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                            Sale
+                                        </p>
+                                        <p
+                                            class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]]">
+                                            £ -545.00 <img src="./Assets/SVG/dot.svg" alt=".">
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex w-full xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] xl:gap-[30px] md:gap-[15px] border-t border-[#868686] justify-between">
+                                        <div
+                                            class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                02 May, 20
+                                            </p>
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                AWS May</p>
+                                        </div>
+                                        <div
+                                            class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                Computer
+                                                Software
+                                            </p>
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                £ -545.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
+                                <p
+                                    class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
+                                    Office
+                                    Costs</p>
+                                <div
+                                    class="relative md:max-w-[265px] min-[380px]:max-w-[230px] max-w-[153px] w-full justify-end flex">
+                                    <input type="checkbox" id="5125" class="peer hidden" />
+                                    <label for="5125"
+                                        class="flex gap-[15px] text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px] items-center cursor-pointer w-fit">
+                                        £ -5125.00
+                                        <img class="lg:w-[14px]" src="./Assets/SVG/select.svg" alt="slct">
+                                    </label>
+                                    <div
+                                        class="hidden peer-checked:block absolute top-10 right-[-15px] bg-white shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-lg md:p-[15px] min-[380px]:p-[13px] p-[8px] z-50 md:max-w-[265px] max-w-[230px] w-full">
+                                        <div class="bg-[#E9E4C6] rounded-[10px]">
+                                            <h3
+                                                class="text-[#B5A642] bg-white md:p-[10px_13px_11px_23px] min-[380px]:p-[8px_10px_9px_12px] p-[5px_8px] rounded-[10px] gap-[11px] flex items-center lg:text-base md:text-[15px] text-sm font-normal tracking-[0.32px]">
+                                                Add
+                                                to master
+                                                category
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="7"
+                                                    viewBox="0 0 14 7" fill="none">
+                                                    <path
+                                                        d="M13 1L8.06061 5.59317C7.47727 6.13561 6.52273 6.13561 5.93939 5.59317L1 1"
+                                                        stroke="#B5A642" stroke-width="1.5" stroke-miterlimit="10"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </h3>
+                                            <div class="lg:px-[12px] md:px-[10px] px-[8px]">
+                                                <p
+                                                    class="text-[#3D3D3D] lg:text-sm text-[13px] font-normal tracking-[0.32px] lg:py-[10px] md:py-[8px] py-[5px]">
+                                                    Office costs</p>
+                                                <p
+                                                    class="text-[#3D3D3D] lg:text-sm text-[13px] font-normal tracking-[0.32px] border-y border-[#868686] lg:py-[10px] md:py-[8px] py-[5px]">
+                                                    Staff
+                                                    costs</p>
+                                                <p
+                                                    class="text-[#3D3D3D] lg:text-sm text-[13px] font-normal tracking-[0.32px] lg:py-[10px] md:py-[8px] py-[5px]">
+                                                    Sales</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overflow-x-scroll [scrollbar-width:none] overflow-hidden
+                            overscroll-x-contain">
+                                <div
+                                    class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] min-w-[620px]">
+                                    <div
+                                        class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
+                                        <p
+                                            class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                            Internet &
+                                            Telephone</p>
+                                        <p
+                                            class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                            £ -5000.00 <img src="./Assets/SVG/dot.svg" alt=".">
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex w-full xl:gap-[30px] md:gap-[15px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] border-t border-[#868686] justify-between">
+                                        <div
+                                            class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                29 April,
+                                                20
+                                            </p>
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                Redsquid
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                Internet &
+                                                Telephone Inc E416 67VAT</p>
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                £ -545.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex w-full xl:gap-[30px] md:gap-[15px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] lg:py-[10px] border-t border-[#868686] justify-between">
+                                        <div
+                                            class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                02 May, 20
+                                            </p>
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                Redsquid
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                Internet &
+                                                Telephone Inc E416 67VAT</p>
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                £ -545.00
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px] xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] min-w-[620px]">
+                                    <p
+                                        class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                        Rent
+                                    </p>
+                                    <p
+                                        class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]lg:pr-[7px]">
+                                        £ -5000.00 <img src="./Assets/SVG/dot.svg" alt=".">
+                                    </p>
+                                </div>
+                                <div class="min-w-[620px]">
+                                    <div class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px]">
+                                        <div
+                                            class="flex justify-between lg:py-[16px] lg:pr-[7px] md:py-[14px] sm:py-[11px] py-[8px] py-[8px] pr-[5px]">
+                                            <p
+                                                class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                                Web Hosting
+                                            </p>
+                                            <p
+                                                class="flex items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.36px]">
+                                                £ -382.55 <img src="./Assets/SVG/dot.svg" alt=".">
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="flex w-full xl:gap-[30px] md:gap-[15px] xl:py-[15px] lg:py-[10px] sm:py-[8px] py-[5px] lg:py-[10px] border-t border-[#868686] justify-between">
+                                            <div
+                                                class="flex justify-between w-full lg:max-w-[310px] md:max-w-[400px] max-w-[290px]">
+                                                <p
+                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                    27
+                                                    April,
+                                                    20
+                                                </p>
+                                                <p
+                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                    Redsquid
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="flex justify-between w-full xl:max-w-[475px] md:max-w-[445px] max-w-[290px]">
+                                                <p
+                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                    Web
+                                                    Hosting
+                                                    Inc £ -178.40 VAT
+                                                </p>
+                                                <p
+                                                    class="text-[#3D3D3D] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-normal tracking-[0.32px]">
+                                                    £
+                                                    -178.40
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

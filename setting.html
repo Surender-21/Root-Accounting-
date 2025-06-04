@@ -1,0 +1,406 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-roboto">
+    <div
+        class="flex xl:py-[30px] lg:py-[27px] md:py-[25px] xl:px-[25px_30px] md:px-[18px_20px] lg:px-[22px_27px] xl:gap-[35px] lg:gap-[30px] sm:py-[18px] sm:px-[20px] px-[16px] py-[12px] md:gap-[25px] sm:gap-[22px] gap-[10px] flex-col lg:flex-row relative">
+        <div class="flex justify-between items-center block lg:hidden">
+            <div>
+                <a href="./setting.html"> <img class="md:w-[120px] sm:w-[110px] w-[95px]" src="./Assets/SVG/logo.svg"
+                        alt="logo"></a>
+            </div>
+            <div>
+                <div class="w-full">
+                    <input type="checkbox" id="menu-btn" class="peer hidden" />
+                    <label for="menu-btn"
+                        class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#1f1f1f">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg>
+                    </label>
+                    <div
+                        class="hidden peer-checked:block absolute top-0 right-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 md:max-w-[300px] sm:max-w-[250px] max-w-[200px] w-full h-screen">
+                        <div class="flex flex-col gap-[10px]">
+                            <div>
+                                <a href="/setting.html">
+                                    <img class="md:w-[100px] sm:w-[90px] w-[80px]" src="./Assets/SVG/logo.svg"
+                                        alt="logo">
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="space-y-[10px] mb-4">
+                                    <li><a href="./setting.html" class="text-[#3D3D3D] hover:text-[#397665]">Setting</a>
+                                    </li>
+                                    <li><a href="#" class="text-[#3D3D3D] hover:text-[#397665]">User Profile</a></li>
+                                    <li><a href="./index.html" class="text-[#3D3D3D] hover:text-[#397665]">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <label for="menu-btn"
+                            class="absolute top-2 right-2 cursor-pointer p-1 rounded hover:bg-[#d3cfb0]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-800" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="xl:max-w-[280px] w-full shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] items-center xl:p-[20px] lg:p-[18px] md:p-[15px] rounded-xl lg:max-w-[235px] md:max-w-[170px] hidden lg:block">
+            <div class="flex flex-col xl:gap-[75px] lg:gap-[70px] md:gap-[50px]">
+                <div class="flex flex-col items-center">
+                    <div>
+                        <a href="./setting.html"><img class="xl:w-[180px] lg:w-[160px] md:w-[125px]"
+                                src="./Assets/SVG/Logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="xl:my-[18px_20px] lg:my-[15px_18px] md:my-[12px_15px]">
+                        <img class="xl:w-[224px] lg:w-[195px] md:w-[165px]" src="./Assets/SVG/1673.svg" alt="1673">
+                    </div>
+                    <div class="w-full flex flex-col gap-[5px]">
+                        <a class="flex items-center xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px]"
+                            href="#">
+                            <svg class="xl:w-[22px] lg:w-[18px] md:w-[16px]" xmlns="http://www.w3.org/2000/svg"
+                                width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                <path
+                                    d="M21 9.9V3.1C21 1.6 20.36 1 18.77 1H14.73C13.14 1 12.5 1.6 12.5 3.1V9.9C12.5 11.4 13.14 12 14.73 12H18.77C20.36 12 21 11.4 21 9.9Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path opacity="0.4"
+                                    d="M21 18.9V17.1C21 15.6 20.36 15 18.77 15H14.73C13.14 15 12.5 15.6 12.5 17.1V18.9C12.5 20.4 13.14 21 14.73 21H18.77C20.36 21 21 20.4 21 18.9Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M9.5 12.1V18.9C9.5 20.4 8.86 21 7.27 21H3.23C1.64 21 1 20.4 1 18.9V12.1C1 10.6 1.64 10 3.23 10H7.27C8.86 10 9.5 10.6 9.5 12.1Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path opacity="0.4"
+                                    d="M9.5 3.1V4.9C9.5 6.4 8.86 7 7.27 7H3.23C1.64 7 1 6.4 1 4.9V3.1C1 1.6 1.64 1 3.23 1H7.27C8.86 1 9.5 1.6 9.5 3.1Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <p class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base font-normal tracking-[0.4px]">
+                                Dashboard
+                            </p>
+                        </a>
+                        <a class="flex xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] transition duration-800 ease-in-out group items-center"
+                            href="/income_expenses.html">
+                            <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                    d="M2 2V19C2 20.66 3.34 22 5 22H22" stroke="#3D3D3D" stroke-width="1.5"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                    opacity="0.4"
+                                    d="M5 17L9.59 11.64C10.35 10.76 11.7 10.7 12.52 11.53L13.47 12.48C14.29 13.3 15.64 13.25 16.4 12.37L21 7"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <p
+                                class="xl:text-[20px] lg:text-[19px] md:text-[17px] text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out font-normal tracking-[0.4px]">
+                                Report</p>
+                        </a>
+                        <a class="flex xl:gap-[17px] lg:gap-[15px] w-full xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:gap-[10px] md:pl-[8px] md:py-[9px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group items-center transition duration-800 ease-in-out"
+                            href="./billing.html">
+                            <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <g opacity="0.4">
+                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                        d="M10.7501 16.86V18.89C10.7501 20.61 9.15011 22 7.18011 22C5.21011 22 3.6001 20.61 3.6001 18.89V16.86C3.6001 18.58 5.20011 19.8 7.18011 19.8C9.15011 19.8 10.7501 18.57 10.7501 16.86Z"
+                                        stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                        d="M10.7498 14.11C10.7498 14.61 10.6098 15.07 10.3698 15.47C9.77981 16.44 8.5698 17.05 7.1698 17.05C5.7698 17.05 4.55979 16.43 3.96979 15.47C3.72979 15.07 3.58984 14.61 3.58984 14.11C3.58984 13.25 3.98982 12.48 4.62982 11.92C5.27982 11.35 6.16979 11.01 7.15979 11.01C8.14979 11.01 9.03982 11.36 9.68982 11.92C10.3498 12.47 10.7498 13.25 10.7498 14.11Z"
+                                        stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                        d="M10.7501 14.11V16.86C10.7501 18.58 9.15011 19.8 7.18011 19.8C5.21011 19.8 3.6001 18.57 3.6001 16.86V14.11C3.6001 12.39 5.20011 11 7.18011 11C8.17011 11 9.06014 11.35 9.71014 11.91C10.3501 12.47 10.7501 13.25 10.7501 14.11Z"
+                                        stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                    d="M22 10.97V13.03C22 13.58 21.56 14.03 21 14.05H19.0399C17.9599 14.05 16.97 13.26 16.88 12.18C16.82 11.55 17.0599 10.96 17.4799 10.55C17.8499 10.17 18.36 9.95001 18.92 9.95001H21C21.56 9.97001 22 10.42 22 10.97Z"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                    d="M2 10.5V8.5C2 5.78 3.64 3.88 6.19 3.56C6.45 3.52 6.72 3.5 7 3.5H16C16.26 3.5 16.51 3.50999 16.75 3.54999C19.33 3.84999 21 5.76 21 8.5V9.95001H18.92C18.36 9.95001 17.85 10.17 17.48 10.55C17.06 10.96 16.82 11.55 16.88 12.18C16.97 13.26 17.96 14.05 19.04 14.05H21V15.5C21 18.5 19 20.5 16 20.5H13.5"
+                                    stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <p
+                                class="group-hover:text-[#397665] text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base font-normal tracking-[0.4px] transition duration-800 ease-in-out">
+                                Payments</p>
+                        </a>
+                        <div class="relative w-full">
+                            <input type="checkbox" id="setting" class="peer hidden" />
+                            <label for="setting"
+                                class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit transition duration-800 ease-in-out">
+                                <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path opacity="0.34"
+                                        d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                        stroke="#397665" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z"
+                                        stroke="#397665" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p
+                                    class="text-[#397665] xl:text-xl lg:text-lg md:text-base tracking-[0.4px] transition duration-800 ease-in-out">
+                                    Settings
+                                </p>
+                            </label>
+                            <div
+                                class="hidden peer-checked:block absolute top-13 left-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 w-full">
+                                <ul class="space-y-[10px]">
+                                    <li class="group"><a href="./setting.html"
+                                            class="flex items-center gap-[8px] text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out">
+                                            <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px]"
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                                    opacity="0.34"
+                                                    d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                                    stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                                    d="M2 12.88V11.12C2 10.08 2.85 9.22 3.9 9.22C5.71 9.22 6.45 7.94 5.54 6.37C5.02 5.47 5.33 4.3 6.24 3.78L7.97 2.79C8.76 2.32 9.78 2.6 10.25 3.39L10.36 3.58C11.26 5.15 12.74 5.15 13.65 3.58L13.76 3.39C14.23 2.6 15.25 2.32 16.04 2.79L17.77 3.78C18.68 4.3 18.99 5.47 18.47 6.37C17.56 7.94 18.3 9.22 20.11 9.22C21.15 9.22 22.01 10.07 22.01 11.12V12.88C22.01 13.92 21.16 14.78 20.11 14.78C18.3 14.78 17.56 16.06 18.47 17.63C18.99 18.54 18.68 19.7 17.77 20.22L16.04 21.21C15.25 21.68 14.23 21.4 13.76 20.61L13.65 20.42C12.75 18.85 11.27 18.85 10.36 20.42L10.25 20.61C9.78 21.4 8.76 21.68 7.97 21.21L6.24 20.22C5.33 19.7 5.02 18.53 5.54 17.63C6.45 16.06 5.71 14.78 3.9 14.78C2.85 14.78 2 13.92 2 12.88Z"
+                                                    stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg> Settings</a></li>
+                                    <li class="group"><a href="#"
+                                            class="flex items-center gap-[8px] text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="17" height="22"
+                                                viewBox="0 0 15 25" fill="none">
+                                                <path
+                                                    class="group-hover:fill-[#397665] transition duration-800 ease-in-out"
+                                                    fill-rule=" evenodd" clip-rule="evenodd"
+                                                    d="M15 19.8048C15 23.8359 10.7197 24.3019 7.50095 24.3019L7.27061 24.3016C5.21989 24.2952 0 24.128 0 19.7804C0 15.8316 4.10829 15.3038 7.30254 15.2839L7.73128 15.2836C9.78186 15.29 15 15.4572 15 19.8048ZM7.50095 17.1179C3.46591 17.1179 1.42045 18.0131 1.42045 19.7804C1.42045 21.5635 3.46591 22.4673 7.50095 22.4673C11.535 22.4673 13.5795 21.5721 13.5795 19.8048C13.5795 18.0217 11.535 17.1179 7.50095 17.1179ZM7.50095 0C10.2737 0 12.5284 2.91323 12.5284 6.49423C12.5284 10.0752 10.2737 12.9872 7.50095 12.9872H7.47064C4.7036 12.9762 2.46212 10.0618 2.47156 6.49056C2.47156 2.91323 4.72727 0 7.50095 0ZM7.50095 1.74647C5.47348 1.74647 3.82384 3.87575 3.82384 6.49423C3.81724 9.10415 5.45455 11.2322 7.47349 11.242L7.50095 12.1152V11.242C9.52746 11.242 11.1761 9.11149 11.1761 6.49423C11.1761 3.87575 9.52746 1.74647 7.50095 1.74647Z"
+                                                    fill="#3D3D3D" />
+                                            </svg> User Profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="relative w-full">
+                            <input type="checkbox" id="more" class="peer hidden" />
+                            <label for="more"
+                                class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit transition duration-800 ease-in-out">
+                                <svg class="xl:w-[24px] lg:w-[20px] md:w-[18px] " xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                        d="M17.5399 8.31001C18.8986 8.31001 20 7.20863 20 5.85001C20 4.49139 18.8986 3.39001 17.5399 3.39001C16.1813 3.39001 15.08 4.49139 15.08 5.85001C15.08 7.20863 16.1813 8.31001 17.5399 8.31001Z"
+                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                        opacity="0.4"
+                                        d="M6.46001 8.31001C7.81863 8.31001 8.92 7.20863 8.92 5.85001C8.92 4.49139 7.81863 3.39001 6.46001 3.39001C5.10139 3.39001 4 4.49139 4 5.85001C4 7.20863 5.10139 8.31001 6.46001 8.31001Z"
+                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                        opacity="0.4"
+                                        d="M17.5399 20.61C18.8986 20.61 20 19.5086 20 18.15C20 16.7914 18.8986 15.69 17.5399 15.69C16.1813 15.69 15.08 16.7914 15.08 18.15C15.08 19.5086 16.1813 20.61 17.5399 20.61Z"
+                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                        d="M6.46001 20.61C7.81863 20.61 8.92 19.5086 8.92 18.15C8.92 16.7914 7.81863 15.69 6.46001 15.69C5.10139 15.69 4 16.7914 4 18.15C4 19.5086 5.10139 20.61 6.46001 20.61Z"
+                                        stroke="#3D3D3D" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p
+                                    class="text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out xl:text-[xl lg:text-lg md:text-base font-normal tracking-[0.4px]">
+                                    More</p>
+                            </label>
+                            <div
+                                class="hidden peer-checked:block absolute top-12 left-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 w-full">
+                                <ul class="space-y-2">
+                                    <li class="group"><a href="/index.html"
+                                            class="text-[#3D3D3D] text-sm flex items-center gap-[5px] group-hover:text-[#397665] transition duration-800 ease-in-out">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19"
+                                                viewBox="0 0 22 19" fill="none">
+                                                <path
+                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                                    d=" M14.0204 5.24357V4.38622C14.0204 2.51622 12.3314 1 10.2483
+                                                    1H5.2582C3.17616 1 1.48718 2.51622 1.48718 4.38622V14.6138C1.48718
+                                                    16.4838 3.17616 18 5.2582 18H10.2586C12.3355 18 14.0204 16.4884
+                                                    14.0204 14.6239V13.7574" stroke="#3D3D3D" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                                    d="M20.9742 9.5H8.64882" stroke="#3D3D3D" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    class="group-hover:stroke-[#397665] transition duration-800 ease-in-out"
+                                                    d="M17.9769 6.82104L20.974 9.49969L17.9769 12.1793" stroke="#3D3D3D"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg> Logout</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full">
+            <div class="flex flex-col xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
+                <div
+                    class="w-full bg-[#397665] rounded-xl xl:px-[30px] xl:py-[15px_17px] lg:px-[23px] lg:py-[12px_14px] md:px-[20px] md:py-[10px_12px] sm:px-[18px] sm:py-[8px_10px] px-[16px] py-[7px_9px]">
+                    <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
+                        Settings</p>
+                </div>
+                <div
+                    class="flex lg:flex-row flex-col xl:gap-[30px] lg:gap-[26px] md:gap-[20px] sm:gap-[16px] gap-[12px] w-full">
+                    <div
+                        class="flex flex-col xl:gap-[30px] lg:gap-[26px] md:gap-[20px] sm:gap-[16px] gap-[12px] w-full">
+                        <div
+                            class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px] xl:py-[0_79px] lg:py-[0_68px] md:py-[0_55px] sm:py-[0_48px] py-[0_35px] lg:max-w-[520px] w-full xl:gap-[30px] lg:gap-[26px] md:gap-[20px] sm:gap-[16px] gap-[12px]">
+                            <div
+                                class="rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
+                                <p
+                                    class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-[13px] font-medium tracking-[0.4px]">
+                                    Connect to your Accounting Software</p>
+                            </div>
+                            <div
+                                class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] flex flex-col  xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
+                                <div
+                                    class="flex xl:flex-row lg:flex-col sm:flex-row flex-col justify-between xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
+                                    <div
+                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] border-transparent hover:border-[#397665] transition duration-800 ease-in-out cursor-pointer lg:py-[13px] md:py-[10px] py-[8px]">
+                                        <img class="xl:w-[160px]" src="./Assets/SVG/free_gent.svg" alt="gent">
+                                    </div>
+                                    <div
+                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] hover:border-[#397665] cursor-pointer transition duration-800 ease-in-out border-transparent lg:py-[13px] md:py-[10px] py-[8px]">
+                                        <img class="xl:w-[160px]" src="./Assets/SVG/g_book.svg" alt="book">
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex xl:flex-row lg:flex-col sm:flex-row flex-col justify-between xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
+                                    <div
+                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] border-transparent cursor-pointer hover:border-[#397665] transition duration-800 ease-in-out lg:py-[22px] md:py-[19px] py-[17px]">
+                                        <img src="./Assets/SVG/xero.svg" alt="xero">
+                                    </div>
+                                    <div class="w-full xl:max-w-[220px]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px] lg:py-[0_28px] md:py-[0_25px] sm:py-[0_18px] py-[0_16px] lg:max-w-[520px] w-full">
+                            <div
+                                class="rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px] w-full">
+                                <p
+                                    class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
+                                    Master Categories</p>
+                            </div>
+                            <div class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] w-full">
+                                <h3
+                                    class="xl:text-base lg:text-[15px] md:text-sm text-[13px] text-[#3D3D3D] font-medium tracking-[0.48px]">
+                                    Add New Categories</h3>
+                                <div
+                                    class="flex items-center xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
+                                    <div
+                                        class="bg-[rgba(181,166,66,0.15)] rounded-lg max-w-[220px] lg:py-[14px] lg:ps-[20px]">
+                                        <input
+                                            class="outline-none placeholder:lg:text-base placeholder:md:text-[15px] placeholder:sm:text-sm placeholder:text-[13px] placeholder:font-light placeholder:tracking-[0.48px] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-light tracking-[0.48px]"
+                                            type="text" placeholder="Marketing">
+                                    </div>
+                                    <div>
+                                        <input
+                                            class="bg-[#387665] lg:py-[14px] xl:px-[42px] lg:px-[38px] md:p-[12px_30] sm:p-[9px_22px] p-[6px_15px] rounded-[10px] text-white xl:text-lg lg:text-[17px] ms:text-base sm:text-[15px] text-[13px] "
+                                            type="submit" value="Add">
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-[rgba(181,166,66,0.15)] rounded-lg xl:px-[23px] lg:px-[22px] md:px-[18px] sm:px-[16] px-[14px] xl:py-[18px_40px] lg:py-[16px_34px] md:py-[14px_28px] sm:py-[12px_22px] py-[10px_18px]">
+                                    <div class="flex justify-between lg:py-[15px] md:py-[13px] sm:py-[11px] py-[9px]">
+                                        <div class="flex flex-col md:gap-[10px] sm:gap-[8px] gap-[6px]">
+                                            <h4
+                                                class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[10px] font-normal">
+                                                <img class="lg:w-[24px] md:w-[21px] sm:w-[19px] w-[18px]"
+                                                    src="./Assets/SVG/office_cost.svg" alt="cost"> Office
+                                                costs
+                                            </h4>
+                                            <p
+                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] text-[#3D3D3D] font-light">
+                                                Internet & Telephone Rent</p>
+                                        </div>
+                                        <div>
+                                            <img class="lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px]"
+                                                src="./Assets/SVG/close.svg" alt="close">
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between lg:py-[15px] md:py-[13px] sm:py-[11px] py-[9px]">
+                                        <div class="flex flex-col md:gap-[10px] sm:gap-[8px] gap-[6px]">
+                                            <h4
+                                                class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[10px] font-normal">
+                                                <img class="lg:w-[22px] md:w-[19px] sm:w-[17px] w-[16px]"
+                                                    src="./Assets/SVG/staff_cost.svg" alt="cost"> Staff costs
+                                            </h4>
+                                            <p
+                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] text-[#3D3D3D] font-light">
+                                                Internet & Telephone Rent</p>
+                                        </div>
+                                        <div>
+                                            <img class="lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px]"
+                                                src="./Assets/SVG/close.svg" alt="close">
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between lg:py-[15px] md:py-[13px] sm:py-[11px] py-[9px]">
+                                        <div>
+                                            <h4
+                                                class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[10px] font-normal">
+                                                <img class="lg:w-[19px] md:w-[16px] sm:w-[14px] w-[13px]"
+                                                    src="./Assets/SVG/sales.svg" alt="cost">Sales
+                                            </h4>
+                                        </div>
+                                        <div>
+                                            <img class="lg:w-[16px] md:w-[14px] sm:w-[12px] w-[10px]"
+                                                src="./Assets/SVG/close.svg" alt="close">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-center gap-[20px]">
+                                    <div>
+                                        <button
+                                            class="bg-[rgba(56,118,101,0.5)] text-white xl:p-[13px_50px] rounded-[10px]">Update</button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            class="bg-[rgba(56,118,101,0.5)] text-white xl:p-[13px_50px] rounded-[10px]">Discard</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div
+                            class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px] xl:py-[0_79px] lg:py-[0_68px] md:py-[0_55px] sm:py-[0_48px] py-[0_35px] lg:max-w-[520px] w-full">
+                            <div
+                                class="rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px] lg:py-[10px_12px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px]">
+                                <p
+                                    class="text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
+                                    Set Your tax year</p>
+                            </div>
+                            <div class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px]">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -221,7 +221,7 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 <p
-                                    class="text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out xl:text-[xl lg:text-lg md:text-base font-normal tracking-[0.4px]">
+                                    class="text-[#3D3D3D] group-hover:text-[#397665] transition duration-800 ease-in-out xl:text-xl lg:text-lg md:text-base sm:text-sm text-[13px] font-normal tracking-[0.4px]">
                                     More</p>
                             </label>
                             <div
@@ -277,7 +277,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full">
+        <div class="w-full relative">
             <div class="w-full flex flex-col xl:gap-[30px] lg:gap-[25px] md:gap-[22px] sm:gap-[18px] gap-[13px]">
                 <div
                     class="w-full flex xl:gap-[30px] lg:gap-[25px] md:gap-[20px] sm:gap-[15px] gap-[12px] md:flex-row flex-col">
@@ -317,9 +317,25 @@
                                                 Yearly</label>
                                         </div>
                                     </div>
-                                    <div class="lg:py-[18px_16px] md:py-[15px_12px] sm:py-[12px_10px] py-[10px_8px]">
+                                    <div
+                                        class="lg:py-[18px_16px] md:py-[15px_12px] sm:py-[12px_10px] py-[10px_8px] group max-w-[160px] w-full">
                                         <a class="underline text-[#397665] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px]"
                                             href="#">Apply Referral Code</a>
+                                        <div class="hidden group-hover:block">
+                                            <div
+                                                class="absolute rounded-[14px] lg:max-w-[540px] md:max-w-[450px] sm:max-w-[350px] max-w-[280px] bg-white xl:left-[220px] lg:left-[180px] md:left-[25%] sm:left-[18%] left-[10px] xl:top-[250px] lg:top-[280px] flex flex-col md:gap-[10px] gap-[8px] w-full md:p-[10px] sm:p-[8px] p-[6px]">
+                                                <h2
+                                                    class="w-full xl:text-2xl lg:text-[22px] md:text-lg sm:text-[15px] text-base lg:py-[8px] md:py-[7px] sm:py-[6px] py-[5px] lg:px-[26px] md:px-[22px] sm:px-[18px] px-[14px] bg-[rgba(181,166,66,0.3)] rounded-[14px]">
+                                                    Referral Code</h2>
+                                                <input
+                                                    class="w-full outline-none placgolder:text-[rgba(61,61,61,0.5)] tracking-[0.48px] placeholder:tracking-[0.48px] font-bold placeholder:font-bold:xl:text-lg placeholder:lg:text-[17px] placeholder:md:text-base placeholder:sm:text-sm placeholder:text-[13px] text-[#3D3D3D] xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] rounded-[7px] border-1 border-[rgba(61,61,61,0.5)] lg:py-[12.5px] md:py-[11.5px] sm:py-[10.5px] py-[9.5px] lg:px-[22px] md:px-[20px] sm:px-[18px] px-[14px]"
+                                                    type="text" placeholder="Ocf6bc45">
+                                                <div class="w-full flex justify-center">
+                                                    <button
+                                                        class="bg-[#387665] text-white rounded-[10px] font-medium tracking-[0.48px] lg:text-xl md:text-base sm:text-sm text-[13px] xl:py-[13px] lg:py-[11px] md:py-[9px] sm:py-[7px] py-[6px] xl:px-[83px] lg:px-[70px] md:px-[58px] sm:px-[45px] px-[38px]">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="flex flex-col gap-[11px]">
                                         <div class="flex w-full items-center justify-between">
@@ -371,9 +387,87 @@
                                                 64.80</p>
                                         </div>
                                     </div>
-                                    <div class="lg:py-[21px_17px] md:py-[18px_15px] sm:py-[15px_12px] py-[12px_10px]">
+                                    <div
+                                        class="lg:py-[21px_17px] md:py-[18px_15px] sm:py-[15px_12px] py-[12px_10px] max-w-[160px] w-full group">
                                         <a class="underline text-[#397665] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px]"
                                             href="#">Apply Referral Code</a>
+                                        <div class="hidden group-hover:block">
+                                            <div
+                                                class="absolute rounded-[14px] lg:max-w-[540px] md:max-w-[450px] sm:max-w-[350px] max-w-[280px] bg-white xl:left-[200px] lg:left-[180px] md:left-[25%] sm:left-[18%] left-[10px] xl:top-[150px] lg:top-[280px] flex flex-col md:gap-[10px] gap-[8px] w-full md:p-[10px] sm:p-[8px] p-[6px]">
+                                                <h2
+                                                    class="w-full xl:text-2xl lg:text-[22px] md:text-lg sm:text-[15px] text-base lg:py-[8px] md:py-[7px] sm:py-[6px] py-[5px] lg:px-[26px] md:px-[22px] sm:px-[18px] px-[14px] bg-[rgba(181,166,66,0.3)] rounded-[14px]">
+                                                    Billing Address</h2>
+                                                <form class="flex flex-col gap-[24px] pt-[14px]">
+                                                    <div
+                                                        class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                        <label
+                                                            class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
+                                                            for="line_1">Address Line 1</label>
+                                                        <input
+                                                            class="border-0 placeholder:font-normal placeholder:text-[#3D3D3D] placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                            type="text" id="line_1" placeholder="Old Bounday house">
+                                                    </div>
+                                                    <div
+                                                        class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                        <label
+                                                            class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
+                                                            for="line_2">Address Line 2</label>
+                                                        <input
+                                                            class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] placeholder:text-[#3D3D3D] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                            type="text" id="line_2" placeholder="London Road">
+                                                    </div>
+                                                    <div
+                                                        class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                        <label
+                                                            class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px] w-full max-w-[165px]"
+                                                            for="city">City</label>
+                                                        <input
+                                                            class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] placeholder:text-[#3D3D3D] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                            type="text" id="city" placeholder="Sunningdale">
+                                                    </div>
+                                                    <div
+                                                        class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                        <label
+                                                            class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px] w-full max-w-[165px]"
+                                                            for="region">Region</label>
+                                                        <input
+                                                            class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] placeholder:text-[#3D3D3D] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                            type="text" id="region" placeholder="Berkshire">
+                                                    </div>
+                                                    <div
+                                                        class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                        <label
+                                                            class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px] w-full max-w-[165px]"
+                                                            for="post">Post Code</label>
+                                                        <input
+                                                            class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] placeholder:text-[#3D3D3D] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                            type="text" id="post" placeholder="SL5 0DJ">
+                                                    </div>
+                                                    <div
+                                                        class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                        <label
+                                                            class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px] w-full max-w-[165px]"
+                                                            for="country">Country</label>
+                                                        <input
+                                                            class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] placeholder:text-[#3D3D3D] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                            type="text" id="post" placeholder="UK">
+                                                    </div>
+                                                    <div
+                                                        class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                        <label
+                                                            class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px] w-full max-w-[165px]"
+                                                            for="country">VAT Number</label>
+                                                        <input
+                                                            class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] placeholder:text-[#3D3D3D] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
+                                                            type="text" id="post" placeholder="GB123456789">
+                                                    </div>
+                                                </form>
+                                                <div class="w-full flex justify-center">
+                                                    <button
+                                                        class="bg-[#387665] text-white rounded-[10px] font-medium tracking-[0.48px] lg:text-xl md:text-base sm:text-sm text-[13px] xl:py-[13px] lg:py-[11px] md:py-[9px] sm:py-[7px] py-[6px] xl:px-[83px] lg:px-[70px] md:px-[58px] sm:px-[45px] px-[38px]">Apply</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div
@@ -547,11 +641,10 @@
                         <p class="text-white xl:text-2xl lg:text-xl md:text-lg text-base font-medium tracking-[0.48px]">
                             Payment History</p>
                     </div>
-                    <div class=" overflow-x-scroll [scrollbar-width:none] overflow-hidden
-                                        overscroll-x-contain">
+                    <div
+                        class=" overflow-x-scroll [scrollbar-width:none] overscroll-x-contain shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px]">
                         <div class="min-w-[620px]">
-                            <div
-                                class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] flex flex-col md:gap-[10px]">
+                            <div class="rounded-[14px] flex flex-col md:gap-[10px]">
                                 <div
                                     class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px_45px] lg:py-[10px_12px] lg:px-[23px_38px] md:px-[20px_32px] sm:px-[18px_25px] px-[16px_20px] sm:py-[7px_9px] md:py-[8px_10px] py-[7px_9px] lg:gap-[30px] md:gap-[25px] sm:gap-[20px] gap-[15px]">
                                     <div class="flex justify-center w-full max-w-[40px]">

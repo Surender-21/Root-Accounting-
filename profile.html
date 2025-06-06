@@ -73,7 +73,7 @@
                         <img class="xl:w-[224px] lg:w-[195px] md:w-[165px]" src="./assets/svg/1673.svg" alt="1673">
                     </div>
                     <div class="w-full flex flex-col gap-[5px]">
-                        <a class="flex items-center xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px]"
+                        <a class="flex items-center xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px] cursor-not-allowed"
                             href="#">
                             <svg class="xl:w-[22px] lg:w-[18px] md:w-[16px]" xmlns="http://www.w3.org/2000/svg"
                                 width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -267,7 +267,8 @@
                         Income</p>
                     <a class="flex items-center text-white lg:gap-[14px] md:gap-[12px] sm:gap-[11px] gap-[10px]"
                         href="./index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+                        <svg class="lg:w-[27px] md:w-[22px] sm:w-[20px] w-[18px]" xmlns="http://www.w3.org/2000/svg"
+                            width="27" height="26" viewBox="0 0 27 26" fill="none">
                             <path
                                 d="M16.8841 6.99092V5.78054C16.8841 3.14054 14.7436 1 12.1036 1H5.77924C3.14054 1 1 3.14054 1 5.78054V20.2195C1 22.8595 3.14054 25 5.77924 25H12.1165C14.7488 25 16.8841 22.8659 16.8841 20.2337V19.0104"
                                 stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -280,21 +281,26 @@
                 </div>
                 <div class="flex justify-center xl:px-[80px]    ">
                     <div
-                        class="max-w-[565px] px-[15px] py-[15px_42px] shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] w-full rounded-[14px]">
+                        class="md:max-w-[565px] sm:max-w-[500px] max-w-[450px] px-[15px] py-[15px_42px] shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] w-full rounded-[14px] flex flex-col xl:gap-[68px] lg:gap-[62px] md:gap-[56px] sm:gap-[48px] gap-[40px]">
                         <div>
-                            <img class="w-full" src="./assets/png/profile_bg.png" alt="bg">
-                        </div>
-                        <div
-                            class="flex flex-col items-center mt-[-55px] lg:gap-[21px] md:gap-[18px] sm:gap-[16px] gap-[14px]">
-                            <img src="./assets/svg/john.svg" alt="john">
-                            <div class="text-center flex flex-col">
-                                <h2
-                                    class="text-[#387665] font-medium xl:text-2xl lg:text-[22px] md:text-xl sm:text-base text-sm">
-                                    John Smith</h2>
-                                <p class="text-[#3D3D3D] font-normal tracking-[0.48px]">Accountant</p>
+                            <div class="relative">
+                                <img class="w-full" src="./assets/png/profile_bg.png" alt="bg">
+                                <img class="absolute bottom-[6px] right-[8px] lg:w-[32px] md:w-[28px] sm:w-[25px] w-[22px]"
+                                    src="./assets/svg/profil_pos.svg" alt="pos">
+                            </div>
+                            <div
+                                class="flex flex-col items-center md:mt-[-55px] sm:mt-[-48px] min-[435px]:mt-[-42px] min-[430px]:mt-[-40px] min-[360px]:mt-[-35px] mt-[-26px] lg:gap-[21px] md:gap-[18px] sm:gap-[16px] gap-[14px]">
+                                <img class="md:w-[113px] sm:w-[100px] min-[465px]:w-[90px] min-[450px]:w-[85px] min-[430px]:w-[78px] min-[360px]:w-[70px] min-[360px]:w-[65px] w-[55px]"
+                                    src="./assets/svg/john.svg" alt="john">
+                                <div class="text-center flex flex-col">
+                                    <h2
+                                        class="text-[#387665] font-medium xl:text-2xl lg:text-[22px] md:text-xl sm:text-base text-sm">
+                                        John Smith</h2>
+                                    <p class="text-[#3D3D3D] font-normal tracking-[0.48px]">Accountant</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="max-w-[467px] mx-auto">
+                        <div class="sm:max-w-[467px] w-full mx-auto">
                             <form action="profile data">
                                 <div
                                     class="flex flex-col xl:gap-[39px] lg:gap-[34px] md:gap-[28px] sm:gap-[24px] gap-[20px]">
@@ -307,7 +313,7 @@
                                             class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
                                             type="text" name="name" id="name" placeholder="John">
                                         <img class="xl:w-[30px] md:w-[24px] sm:w-[20px] w-[17px]"
-                                            src="./assets/SVG/@.svg" alt="@">
+                                            src="./assets/svg/@.svg" alt="@">
                                     </div>
                                     <div
                                         class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[23px] xl:px-[28px_20px] flex justify-between items-center lg:py-[20px] lg:px-[25px_17px] md:py-[15px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
@@ -332,15 +338,20 @@
                                             src="./assets/svg/eyes.svg" alt="eyeys">
                                     </div>
                                 </div>
-                                <a class="text-[#387665] xl:text-[20px] lg:text-lg md:text-[17px] sm:text-base text-[15px]"
-                                    href="#">Change Password ?</a>
-                                <div class="flex gap-[20px] justify-center">
+                                <div
+                                    class="xl:py-[30px_41px] lg:py-[27px_35px] md:py-[24px_30px] sm:py-[20px_26px] py-[14px_18px]">
+                                    <a class="text-[#387665] xl:text-[20px] lg:text-lg md:text-[17px] sm:text-base text-[15px]"
+                                        href="#">Change Password ?</a>
+                                </div>
+                                <div class="flex gap-[20px] justify-center flex-col sm:flex-row items-center">
                                     <div>
-                                        <input class="bg-[#387665] rounded-[10px] text-white py-[13px] px-[40px_46px]"
+                                        <input
+                                            class="bg-[#387665] rounded-[10px] text-white lg:py-[13px] md:py-[11px] sm:py-[8px] py-[7px] xl:px-[40px_46px] lg:px-[36px_42px] md:px-[29px_33px] sm:px-[26px_30px] px-[18px_24px] hover:shadow-[0px_20px_40px_-15px_#397665] cursor-pointer transition duration-800 ease-in-out"
                                             type="button" value="Save Changes">
                                     </div>
                                     <div>
-                                        <input class="px-[72px_75px] py-[13px] bg-[#E9E5C7] rounded-[10px]"
+                                        <input
+                                            class="xl:px-[72px_75px] lg:px-[64px_66px] md:px-[56px_58px] sm:px-[52px_56px] px-[45px_49px] lg:py-[13px] md:py-[11px] sm:py-[8px] py-[7px] bg-[#E9E5C7] rounded-[10px] hover:shadow-[0px_20px_40px_-15px_#E9E5C7]  cursor-pointer transition duration-800 ease-in-out"
                                             type="button" value="Cancel">
                                     </div>
                                 </div>

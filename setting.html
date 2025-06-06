@@ -73,7 +73,7 @@
                         <img class="xl:w-[224px] lg:w-[195px] md:w-[165px]" src="./assets/svg/1673.svg" alt="1673">
                     </div>
                     <div class="w-full flex flex-col gap-[5px]">
-                        <a class="flex items-center xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px]"
+                        <a class="flex items-center xl:gap-[17px] lg:gap-[15px] md:gap-[10px] w-full xl:pl-[17px] lg:pl-[14px] md:pl-[8px] xl:py-[15px] lg:py-[14px] md:py-[9px] rounded-[10px] cursor-not-allowed"
                             href="#">
                             <svg class="xl:w-[22px] lg:w-[18px] md:w-[16px]" xmlns="http://www.w3.org/2000/svg"
                                 width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -282,19 +282,40 @@
                                 <div
                                     class="flex xl:flex-row lg:flex-col sm:flex-row flex-col justify-between xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
                                     <div
-                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] border-transparent hover:border-[#397665] transition duration-800 ease-in-out cursor-pointer lg:py-[13px] md:py-[10px] py-[8px]">
+                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] border-transparent hover:border-[#397665] transition duration-800 ease-in-out cursor-pointer lg:py-[13px] md:py-[10px] py-[8px] relative group">
                                         <img class="xl:w-[160px]" src="./assets/svg/free_gent.svg" alt="gent">
+                                        <div
+                                            class="absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-800 ease-in-out top-[-14px] right-0">
+                                            <p
+                                                class="text-white text-[12px] py-[4px] px-[8px] bg-[#387665] rounded-[8px] flex justify-center">
+                                                Connected
+                                            </p>
+                                        </div>
                                     </div>
                                     <div
-                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] hover:border-[#397665] cursor-pointer transition duration-800 ease-in-out border-transparent lg:py-[13px] md:py-[10px] py-[8px]">
+                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] hover:border-[#397665] cursor-pointer transition duration-800 ease-in-out border-transparent lg:py-[13px] md:py-[10px] py-[8px] relative group">
                                         <img class="xl:w-[160px]" src="./assets/svg/g_book.svg" alt="book">
+                                        <div
+                                            class="absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-800 ease-in-out top-[-14px] right-0">
+                                            <p
+                                                class="text-white text-[12px] py-[4px] px-[8px] bg-[#387665] rounded-[8px] flex justify-center">
+                                                Connected
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div
                                     class="flex xl:flex-row lg:flex-col sm:flex-row flex-col justify-between xl:gap-[20px] lg:gap-[17px] md:gap-[15px] sm:gap-[12px] gap-[10px]">
                                     <div
-                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] border-transparent cursor-pointer hover:border-[#397665] transition duration-800 ease-in-out lg:py-[22px] md:py-[19px] py-[17px]">
+                                        class="w-full xl:max-w-[220px] flex justify-center bg-[rgba(57,118,101,0.078)] rounded-[10px] border-[0.5px] border-transparent cursor-pointer hover:border-[#397665] transition duration-800 ease-in-out lg:py-[22px] md:py-[19px] py-[17px] relative group">
                                         <img src="./assets/svg/xero.svg" alt="xero">
+                                        <div
+                                            class="absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-800 ease-in-out top-[-14px] right-0">
+                                            <p
+                                                class="text-white text-[12px] py-[4px] px-[8px] bg-[#387665] rounded-[8px] flex justify-center">
+                                                Connected
+                                            </p>
+                                        </div>
                                     </div>
                                     <div class="w-full xl:max-w-[220px]">
                                     </div>
@@ -325,7 +346,7 @@
                                         </div>
                                         <div>
                                             <input
-                                                class="bg-[#387665] lg:py-[14px] xl:px-[42px] lg:px-[38px] md:p-[12px_30] sm:p-[9px_22px] p-[6px_15px] rounded-[10px] text-white xl:text-lg lg:text-[17px] ms:text-base sm:text-[15px] text-[13px] "
+                                                class="bg-[#387665] lg:py-[14px] xl:px-[42px] lg:px-[38px] md:p-[12px_30] sm:p-[9px_22px] p-[6px_15px] rounded-[10px] text-white xl:text-lg lg:text-[17px] ms:text-base sm:text-[15px] text-[13px] hover:shadow-[0px_20px_40px_-15px_#397665] cursor-pointer transition duration-800 ease-in-out"
                                                 type="submit" value="Add">
                                         </div>
                                     </div>
@@ -336,7 +357,7 @@
                                             <div
                                                 class="flex flex-col lg:gap-[10px] md:gap-[8px] sm:gap-[5px] gap-[2px]">
                                                 <h4
-                                                    class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[8px] font-normal">
+                                                    class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[8px] font-normal text-[#3D3D3D]">
                                                     <img class="lg:w-[24px] md:w-[21px] sm:w-[19px] w-[18px]"
                                                         src="./assets/svg/office_cost.svg" alt="cost"> Office
                                                     costs
@@ -355,7 +376,7 @@
                                             <div
                                                 class="flex flex-col lg:gap-[10px] md:gap-[8px] sm:gap-[5px] gap-[2px]">
                                                 <h4
-                                                    class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[8px] font-normal">
+                                                    class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[8px] font-normal text-[#3D3D3D]">
                                                     <img class="lg:w-[22px] md:w-[19px] sm:w-[17px] w-[16px]"
                                                         src="./assets/svg/staff_cost.svg" alt="cost"> Staff costs
                                                 </h4>
@@ -372,7 +393,7 @@
                                             class="flex justify-between lg:py-[15px] md:py-[13px] sm:py-[11px] py-[9px]">
                                             <div>
                                                 <h4
-                                                    class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[8px] font-normal">
+                                                    class="flex items-center xl:text-base lg:text-[15px] md:text-sm text-[13px] lg:gap-[18px] md:gap-[15px] sm:gap-[12px] gap-[8px] font-normal text-[#3D3D3D]">
                                                     <img class="lg:w-[19px] md:w-[16px] sm:w-[14px] w-[13px]"
                                                         src="./assets/svg/sales.svg" alt="cost">Sales
                                                 </h4>
@@ -386,11 +407,11 @@
                                     <div class="flex justify-center gap-[20px]">
                                         <div>
                                             <button
-                                                class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px]">Update</button>
+                                                class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px] hover:shadow-[0px_20px_40px_-15px_#397665] hover:bg-[#387665] cursor-pointer transition duration-800 ease-in-out">Update</button>
                                         </div>
                                         <div>
                                             <button
-                                                class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px]">Discard</button>
+                                                class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px] hover:shadow-[0px_20px_40px_-15px_#397665] hover:bg-[#387665] cursor-pointer transition duration-800 ease-in-out">Discard</button>
                                         </div>
                                     </div>
                                 </div>
@@ -412,7 +433,7 @@
                                     <div
                                         class="flex items-center xl:gap-[36px] lg:gap-[30px] md:gap-[26px] sm:gap-[18px] gap-[14px]">
                                         <label
-                                            class="xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] font-normal tracking-[0.48px] max-w-[86px] w-full"
+                                            class="xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] font-normal tracking-[0.48px] max-w-[86px] w-full text-[#3D3D3D]"
                                             for="start_date">Start Date</label>
                                         <input
                                             class="lg:p-[14px_20px] md:p-[11px_18px] sm:p-[8px_15px] p-[6px_12px] bg-[rgba(181,166,66,0.15)] outline-none text-[#3D3D3D] rounded-lg lg:text-base md:text-sm sm:text-[13px] text-[12px]"
@@ -421,7 +442,7 @@
                                     <div
                                         class="flex items-center xl:gap-[36px] lg:gap-[30px] md:gap-[26px] sm:gap-[18px] gap-[14px]">
                                         <label
-                                            class="xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] font-normal tracking-[0.48px] max-w-[86px] w-full"
+                                            class="xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] font-normal tracking-[0.48px] max-w-[86px] w-full text-[#3D3D3D]"
                                             for="start_date">End Date</label>
                                         <input
                                             class="lg:p-[14px_20px] md:p-[11px_18px] sm:p-[8px_15px] p-[6px_12px] bg-[rgba(181,166,66,0.15)] outline-none text-[#3D3D3D] rounded-lg lg:text-base md:text-sm sm:text-[13px] text-[12px]"
@@ -431,11 +452,11 @@
                                 <div class="flex justify-center gap-[20px]">
                                     <div>
                                         <button
-                                            class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px]">Update</button>
+                                            class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px] hover:shadow-[0px_20px_40px_-15px_#397665] hover:bg-[#387665] cursor-pointer transition duration-800 ease-in-out">Update</button>
                                     </div>
                                     <div>
                                         <button
-                                            class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px]">Discard</button>
+                                            class="bg-[rgba(56,118,101,0.5)] text-white rounded-[10px] font-medium xl:text-lg lg:text-[17px] md:text-base sm:text-sm text-[13px] xl:p-[13px_50px] lg:p-[12px_42px] md:p-[10px_35px] sm:p-[8px_28px] p-[6px_20px] hover:shadow-[0px_20px_40px_-15px_#397665] hover:bg-[#387665] cursor-pointer transition duration-800 ease-in-out">Discard</button>
                                     </div>
                                 </div>
                             </div>

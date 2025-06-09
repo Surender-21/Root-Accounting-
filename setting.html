@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/svg/favicon.svg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -17,47 +18,43 @@
                 <a href="./setting.html"> <img class="md:w-[120px] sm:w-[110px] w-[95px]" src="./assets/svg/logo.svg"
                         alt="logo"></a>
             </div>
-            <div>
-                <div class="w-full">
-                    <input type="checkbox" id="menu-btn" class="peer hidden" />
-                    <label for="menu-btn"
-                        class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                            fill="#1f1f1f">
-                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                        </svg>
-                    </label>
-                    <div
-                        class="hidden peer-checked:block absolute top-0 right-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 md:max-w-[300px] sm:max-w-[250px] max-w-[200px] w-full h-screen">
-                        <div class="flex flex-col gap-[10px]">
-                            <div>
-                                <a href="/setting.html">
-                                    <img class="md:w-[100px] sm:w-[90px] w-[80px]" src="./assets/svg/logo.svg"
-                                        alt="logo">
-                                </a>
-                            </div>
-                            <div>
-                                <ul class="space-y-[10px] mb-4">
-                                    <li> <a class="text-[#3D3D3D] hover:text-[#397665]"
-                                            href="./income_expenses.html">Report</a> </li>
-                                    <li><a class="text-[#3D3D3D] hover:text-[#397665]"
-                                            href="./billing.html">Payments</a></li>
-                                    <li><a href="./setting.html" class="text-[#3D3D3D] hover:text-[#397665]">Setting</a>
-                                    </li>
-                                    <li><a href="./profile.html" class="text-[#3D3D3D] hover:text-[#397665]">User
-                                            Profile</a></li>
-                                    <li><a href="./index.html" class="text-[#3D3D3D] hover:text-[#397665]">Logout</a>
-                                    </li>
-                                </ul>
-                            </div>
+            <div class="w-full">
+                <input type="checkbox" id="menu-btn" class="peer hidden" />
+                <label for="menu-btn"
+                    class="flex w-full items-center xl:pl-[17px] lg:pl-[14px] xl:py-[15px] lg:py-[14px] md:pl-[8px] md:py-[9px] md:gap-[10px] rounded-[10px] hover:bg-[rgba(57,118,101,0.15)] group cursor-pointer w-fit">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#1f1f1f">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </label>
+                <div
+                    class="hidden peer-checked:block absolute top-0 right-0 bg-[#E9E4C6] shadow-lg rounded-b-lg p-4 z-20 md:max-w-[300px] sm:max-w-[250px] max-w-[200px] w-full h-screen">
+                    <div class="flex flex-col gap-[10px]">
+                        <div>
+                            <a href="/setting.html">
+                                <img class="md:w-[100px] sm:w-[90px] w-[80px]" src="./assets/svg/logo.svg" alt="logo">
+                            </a>
                         </div>
-                        <label for="menu-btn"
-                            class="absolute top-2 right-2 cursor-pointer p-1 rounded hover:bg-[#d3cfb0]">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-800" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg></label>
+                        <div>
+                            <ul class="space-y-[10px] mb-4">
+                                <li> <a class="text-[#3D3D3D] hover:text-[#397665]"
+                                        href="./income_expenses.html">Report</a> </li>
+                                <li><a class="text-[#3D3D3D] hover:text-[#397665]" href="./billing.html">Payments</a>
+                                </li>
+                                <li><a href="./setting.html" class="text-[#3D3D3D] hover:text-[#397665]">Setting</a>
+                                </li>
+                                <li><a href="./profile.html" class="text-[#3D3D3D] hover:text-[#397665]">User
+                                        Profile</a></li>
+                                <li><a href="./index.html" class="text-[#3D3D3D] hover:text-[#397665]">Logout</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <label for="menu-btn" class="absolute top-2 right-2 cursor-pointer p-1 rounded hover:bg-[#d3cfb0]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-800" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg></label>
                 </div>
             </div>
         </div>

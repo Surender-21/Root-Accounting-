@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing up</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/svg/favicon.svg" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -24,7 +26,7 @@
             <div
                 class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] lg:my-[47px_45px] md:my-[42px_45px] md:mx-[30px] sm:my-[40px] my-[35px] mx-[16px] relative overflow-hidden">
                 <div class="absolute top-[0] right-[0]">
-                    <img class="md:w-[120px] sm:w-[95px] w-[75px]" src="./assets/png/login-pos.png" alt="">
+                    <img class="md:w-[120px] sm:w-[95px] w-[75px]" src="./assets/png/login-pos.png">
                 </div>
                 <div
                     class="flex flex-col lg:max-w-[600px] md:max-w-[500px] min-[480px]:max-w-[455px] xl:py-[50px] lg:py-[45px] md:py-[35px] sm:py-[28px] min-[480px]:py-[25px] py-[22px] lg:gap-[20px] md:gap-[18px] sm:gap-[17px] gap-[15px]">
@@ -61,18 +63,7 @@
                                                         for="bn">Business Name</label>
                                                     <input
                                                         class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[13px]"
-                                                        type="text" name="BN" id="bn" placeholder="The Agency" required>
-                                                    <img class="xl:w-[20px] md:w-[18px] sm:w-[16px] w-[13px]"
-                                                        src="./assets/svg/contect.svg" alt="@">
-                                                </div>
-                                                <div
-                                                    class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
-                                                    <label
-                                                        class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
-                                                        for="Name">Name</label>
-                                                    <input
-                                                        class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[13px]"
-                                                        type="text" name="naam" id="Name" placeholder="Jon Smith"
+                                                        type="text" name="Business" id="bn" placeholder="The Agency"
                                                         required>
                                                     <img class="xl:w-[20px] md:w-[18px] sm:w-[16px] w-[13px]"
                                                         src="./assets/svg/contect.svg" alt="@">
@@ -81,10 +72,22 @@
                                                     class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
                                                     <label
                                                         class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
-                                                        for="Mail">E-mail</label>
+                                                        for="name">Name</label>
+                                                    <input
+                                                        class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[13px]"
+                                                        type="text" name="Jon" id="name" placeholder="Jon Smith"
+                                                        required>
+                                                    <img class="xl:w-[20px] md:w-[18px] sm:w-[16px] w-[13px]"
+                                                        src="./assets/svg/contect.svg" alt="@">
+                                                </div>
+                                                <div
+                                                    class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[17px] xl:px-[28px_17px] flex justify-between items-center lg:py-[15px] lg:px-[25px_15px] md:py-[13px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
+                                                    <label
+                                                        class="absolute sm:top-[-17px] top-[-13px] left-[30px] bg-white p-[2px_14px_0_10px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
+                                                        for="Email">E-mail</label>
                                                     <input
                                                         class="border-0 placeholder:font-normal placeholder:tracking-[0.36px] w-full outline-none lg:placeholder:text-[18px] md:placeholder:text-[16px] sm:placeholder:text-[15px] placeholder:text-[12px]"
-                                                        type="email" name="mail" id="Mail"
+                                                        type="email" name="mail" id="Email"
                                                         placeholder="Rootsaccounting12@gmail.com" required>
                                                     <img class="xl:w-[30px] md:w-[24px] sm:w-[20px] w-[17px]"
                                                         src="./assets/svg/@.svg" alt="@">
@@ -93,11 +96,11 @@
                                                     class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[23px] xl:px-[28px_20px] flex justify-between items-center lg:py-[20px] lg:px-[25px_17px] md:py-[15px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
                                                     <label
                                                         class="absolute lg:top-[-17px] left-[30px] md:top-[-15px] bg-white md:p-[2px_14px_0_10px] p-[2px_11px_0_8px] top-[-13px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
-                                                        for="Password">Password</label>
+                                                        for="Pass">Password</label>
                                                     <input
                                                         class="border-0 xl:placeholder:text-[105px] placeholder:text-[#C4C4C4] placeholder:font-normal xl:placeholder:tracking-[-8px] w-full outline-none lg:placeholder:text-[85px] md:placeholder:text-[80px] sm:placeholder:text-[75px] placeholder:text-[60px] sm:placeholder:tracking-[-6px] placeholder:tracking-[-4px]"
-                                                        type="password" name="password" id="Password"
-                                                        placeholder="........" required>
+                                                        type="password" name="password" id="Pass" placeholder="........"
+                                                        required>
                                                     <img class="xl:w-[25px] md:w-[22px] sm:w-[19px] w-[16px]"
                                                         src="./assets/svg/eyes.svg" alt="eyeys">
                                                 </div>
@@ -105,11 +108,11 @@
                                                     class="relative border border-[#3D3D3D] rounded-[8px] xl:py-[23px] xl:px-[28px_20px] flex justify-between items-center lg:py-[20px] lg:px-[25px_17px] md:py-[15px] md:px-[22px_13px] sm:py-[10px] sm:px-[15px_11px] py-[9px] px-[11px_10px]">
                                                     <label
                                                         class="absolute lg:top-[-17px] left-[30px] md:top-[-15px] bg-white md:p-[2px_14px_0_10px] p-[2px_11px_0_8px] top-[-13px] lg:text-[20px] md:text-[18px] sm:text-[16px] text-[14px] text-[#3D3D3D] font-medium tracking-[0.4px]"
-                                                        for="Password">Confirm Password</label>
+                                                        for="pass">Confirm Password</label>
                                                     <input
                                                         class="border-0 xl:placeholder:text-[105px] placeholder:text-[#C4C4C4] placeholder:font-normal xl:placeholder:tracking-[-8px] w-full outline-none lg:placeholder:text-[85px] md:placeholder:text-[80px] sm:placeholder:text-[75px] placeholder:text-[60px] sm:placeholder:tracking-[-6px] placeholder:tracking-[-4px]"
-                                                        type="password" name="password" id="Password"
-                                                        placeholder="........" required>
+                                                        type="password" name="password" id="pass" placeholder="........"
+                                                        required>
                                                     <img class="xl:w-[25px] md:w-[22px] sm:w-[19px] w-[16px]"
                                                         src="./assets/svg/eyes.svg" alt="eyeys">
                                                 </div>

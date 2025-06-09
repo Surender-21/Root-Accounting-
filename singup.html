@@ -13,7 +13,7 @@
 <body>
     <div class="flex size-full flex-wrap md:flex-nowrap justify-center">
         <div
-            class="bg-[url('./assets/png/login-bg.png')] bg-left bg-[length:100%_100%] bg-no-repeat xl:w-[43%] md:w-[40%] flex items-center md:pr-[10px] w-full justify-center md:justify-start md:py-[0] sm:py-[45px] py-[40px]">
+            class="bg-[url('./assets/png/login-bg.png')] bg-left bg-[length:100%_100%] bg-no-repeat xl:w-[43%] md:w-[40%] flex items-center md:pr-[10px] w-full justify-center md:justify-start md:py-[0] sm:py-[45px] py-[40px] min-h-dvh">
             <div
                 class="bg-[url('./assets/png/login-logo-bg.png')] bg-left bg-[length:100%_100%] bg-no-repeat xl:max-w-[470px] lg:max-w-[380px] md:max-w-[350px] min-[480px]:max-w-[300px] max-w-[285px] w-full flex justify-center xl:py-[61px] lg:py-[55px] md:py-[50px] sm:py-[30px] min-[480px]:py-[25px] py-[23px]">
                 <a href="./singup.html">
@@ -22,9 +22,9 @@
                 </a>
             </div>
         </div>
-        <div class="xl:w-[57%] md:w-[60%] w-full flex justify-center">
+        <div class="xl:w-[57%] md:w-[60%] w-full flex justify-center items-center">
             <div
-                class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] lg:my-[47px_45px] md:my-[42px_45px] md:mx-[30px] sm:my-[40px] my-[35px] mx-[16px] relative overflow-hidden">
+                class="shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] lg:my-[47px_45px] md:my-[42px_45px] md:mx-[30px] sm:my-[40px] my-[35px] mx-[16px] relative overflow-hidden h-fit">
                 <div class="absolute top-[0] right-[0]">
                     <img class="md:w-[120px] sm:w-[95px] w-[75px]" src="./assets/png/login-pos.png">
                 </div>
@@ -119,37 +119,39 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div
+                                        class="flex flex-col lg:gap-[18px] md:gap-[16px] sm:gap-[15px] gap-[13px] justify-center items-center xl:pt-[20px] lg:pt[18px] md:pt-[16px] sm:pt-[14px] pt-[12px]">
+                                        <div class="flex sm:gap-[12px] gap-[10px]">
+                                            <input
+                                                class="rounded-[5px] transform xl:scale-[1.8] lg:scale-[1.6] md:scale-[1.4] sm:scale-[1.3] scale-[1.2]"
+                                                type="checkbox" name="remember" id="checkbox">
+                                            <label
+                                                class="text-[#868686] xl:text-lg lg:text-[17px] sm:text-[13px] text-[11px] font-normal tracking-[0.36px] whitespace-nowrap"
+                                                for="checkbox">I agree to the <a class="underline text-[#387665]"
+                                                    href="#">Terms
+                                                    and
+                                                    Conditions</a> and
+                                                <a class="underline text-[#387665]" href="#">Privacy Policy.</a></label>
+                                        </div>
+                                        <div
+                                            class="flex flex-col xl:gap-[30px] lg:gap-[28px] md:gap-[25px] sm:gap-[23px] gap-[20px] items-center">
+                                            <div class="flex justify-center items-center">
+                                                <a class="bg-[#387665] rounded-[10px] text-white lg:text-[18px] md:text-[17px] sm:text-[16px] text-[15px] font-medium tracking-[0.36px] xl:px-[106px] lg:py-[12px] lg:px-[95px] md:py-[11px] md:px-[90px] sm:py-[10px] sm:px-[80px] py-[9px] px-[70px] hover:shadow-[0px_20px_40px_-15px_#397665] cursor-pointer transition duration-800 ease-in-out"
+                                                    href="./income_expenses.html">Sign up</a>
+                                            </div>
+                                            <div>
+                                                <p
+                                                    class="text-[#3D3D3D] xl:text-[20px] lg:text-[19px] md:text-[18px] sm:text-[17px] text-[15px] font-normal tracking-[0.4px]">
+                                                    Already Have an Account ? <a class="text-[#387665] font-medium"
+                                                        href="./index.html">Login</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="flex flex-col lg:gap-[18px] md:gap-[16px] sm:gap-[15px] gap-[13px] justify-center items-center lg:px-[40px] md:px-[18px] sm:px-[22px] px-[11px]">
-                        <div class="flex sm:gap-[12px] gap-[10px]">
-                            <input
-                                class="rounded-[5px] transform xl:scale-[1.8] lg:scale-[1.6] md:scale-[1.4] sm:scale-[1.3] scale-[1.2]"
-                                type="checkbox" name="remember" id="checkbox">
-                            <label
-                                class="text-[#868686] xl:text-lg lg:text-[17px] sm:text-[13px] text-[11px] font-normal tracking-[0.36px]"
-                                for="checkbox">I agree to the <a class="underline text-[#387665]" href="#">Terms
-                                    and
-                                    Conditions</a> and
-                                <a class="underline text-[#387665]" href="#">Privacy Policy.</a></label>
-                        </div>
-                        <div
-                            class="flex flex-col xl:gap-[30px] lg:gap-[28px] md:gap-[25px] sm:gap-[23px] gap-[20px] items-center">
-                            <div class="flex justify-center items-center">
-                                <a class="bg-[#387665] rounded-[10px] text-white lg:text-[18px] md:text-[17px] sm:text-[16px] text-[15px] font-medium tracking-[0.36px] xl:px-[106px] lg:py-[12px] lg:px-[95px] md:py-[11px] md:px-[90px] sm:py-[10px] sm:px-[80px] py-[9px] px-[70px] hover:shadow-[0px_20px_40px_-15px_#397665] cursor-pointer transition duration-800 ease-in-out"
-                                    href="./income_expenses.html">Sign up</a>
-                            </div>
-                            <div>
-                                <p
-                                    class="text-[#3D3D3D] xl:text-[20px] lg:text-[19px] md:text-[18px] sm:text-[17px] text-[15px] font-normal tracking-[0.4px]">
-                                    Already Have an Account ? <a class="text-[#387665] font-medium"
-                                        href="./index.html">Login</a></p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>

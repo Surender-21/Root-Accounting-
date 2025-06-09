@@ -303,25 +303,32 @@
                                         Choose Subscription</p>
                                 </div>
                                 <div class="xl:px-[30px] lg:px-[26px] md:px-[22px] sm:px-[18px] px-[16px]">
-                                    <div
-                                        class="flex xl:gap-[23px] lg:gap-[20px] md:gap-[18px] sm:gap-[15px] gap-[12px] pl-[5px] xl:pt-[10px] md:pt-[7px] sm:pt-[5px] pt-[3px]">
-                                        <div class="flex items-center gap-[12px]">
-                                            <input class="transform lg:scale-[1.5]" type="checkbox" name="slry"
-                                                id="month">
-                                            <label
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] text-[#3D3D3D]"
-                                                for="month">£5
-                                                Monthly</label>
-                                        </div>
-                                        <div class="flex items-center md:gap-[12px]">
-                                            <input class="transform lg:scale-[1.5]" type="checkbox" name="pesa"
-                                                id="year">
-                                            <label
-                                                class="xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px] text-[#3D3D3D]"
-                                                for="year">£54
-                                                Yearly</label>
-                                        </div>
-                                    </div>
+                                    <form class="flex gap-6 pl-2 pt-2">
+                                        <label class="flex items-center gap-2 cursor-pointer" for="month">
+                                            <input type="radio" name="payment" id="month" class="peer hidden" />
+                                            <div
+                                                class="w-5 h-5 rounded-sm border-2 border-[#B5A642] flex items-center justify-center relative">
+                                                <svg class="absolute w-[18px] z-50 hidden peer-checked:block"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                                    fill="#B5A642">
+                                                    <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                                </svg>
+                                            </div>
+                                            <span class="text-sm text-[#3D3D3D] font-medium">£5 Monthly</span>
+                                        </label>
+                                        <label class="flex items-center gap-2 cursor-pointer" for="year">
+                                            <input type="radio" name="payment" id="year" class="peer hidden" />
+                                            <div
+                                                class="w-5 h-5 rounded-sm border-2 border-[#B5A642] flex items-center justify-center relative">
+                                                <svg class="absolute w-[18px] z-50 opacity-0 peer-checked:opacity-100"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
+                                                    fill="#B5A642">
+                                                    <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                                                </svg>
+                                            </div>
+                                            <span class="text-sm text-[#3D3D3D] font-medium">£54 Yearly</span>
+                                        </label>
+                                    </form>
                                     <div
                                         class="lg:py-[16px_14px] md:py-[14px_12px] sm:py-[12px_10px] py-[10px_8px] group max-w-[160px] w-full">
                                         <a class="underline text-[#397665] xl:text-base lg:text-[15px] md:text-sm text-[13px] font-medium tracking-[0.48px]"
@@ -649,184 +656,137 @@
                             Payment History</p>
                     </div>
                     <div
-                        class=" overflow-x-scroll [scrollbar-width:none] overscroll-x-contain shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px]">
-                        <div class="min-w-[620px]">
-                            <div class="rounded-[14px] flex flex-col md:gap-[10px]">
-                                <div
-                                    class="flex justify-between rounded-[14px] bg-[rgba(181,166,66,0.30)] xl:px-[30px_45px] lg:py-[8.5px] lg:px-[23px_38px] md:px-[20px_32px] sm:px-[18px_25px] px-[16px_20px] sm:py-[7px] md:py-[8px] py-[6px] lg:gap-[30px] md:gap-[25px] sm:gap-[20px] gap-[15px]">
-                                    <div class="flex justify-center w-full max-w-[40px]">
-                                        <p
-                                            class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                            ID</p>
-                                    </div>
-                                    <div class="flex justify-center w-full max-w-[120px]">
-                                        <p
-                                            class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] items-center xl:gap-[23px] lg:gap-[15px] md:gap-[10px] sm:gap-[8px] gap-[5px] text-sm font-medium">
-                                            Date <img class="lg:w-[14px] md:w-[11px] sm:w-[10px] w-[9px]"
-                                                src="./assets/svg/select.svg" alt="slct">
-                                        </p>
-                                    </div>
-                                    <div class="w-full max-w-[220px] flex justify-center max-w-[160px]">
-                                        <p
-                                            class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] text-sm font-medium">
-                                            Payment method
-                                        </p>
-                                    </div>
-                                    <div class="flex justify-center w-full max-w-[80px]">
-                                        <p
-                                            class="text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] text-sm font-medium tracking-[0.4px]">
-                                            Amount</p>
-                                    </div>
-                                    <div class="flex justify-center w-full max-w-[70px]">
-                                        <p
-                                            class="flex text-[#3D3D3D] xl:text-xl lg:text-lg md:text-base sm:text-[15px] tracking-[0.4px] text-sm font-medium">
-                                            Receipt
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="xl:px-[30px] lg:px-[23px] md:px-[20px] sm:px-[18px] px-[16px]">
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] gap-[10px] xl:py-[12px] lg:py-[9px] sm:py-[7px] py-[5px] justify-between">
-                                        <div class="flex justify-center w-full max-w-[40px]">
-                                            <p
-                                                class="text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.4px]">
-                                                101</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[120px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                17 July, 2020
-                                            </p>
-                                        </div>
-                                        <div class="w-full max-w-[220px] flex justify-center max-w-[160px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                Card
-                                            </p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[80px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                £ 5400</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[70px]">
-                                            <img class="h-[22px]" src="./assets/svg/downlod.svg" alt="dnld">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[12px] lg:py-[9px] sm:py-[7px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div class="flex justify-center w-full max-w-[40px]">
-                                            <p
-                                                class="text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.4px]">
-                                                101</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[120px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                17 July, 2020
-                                            </p>
-                                        </div>
-                                        <div class="w-full max-w-[220px] flex justify-center max-w-[160px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                Card
-                                            </p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[80px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                £ 5400</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[70px]">
-                                            <img class="h-[22px]" src="./assets/svg/downlod.svg" alt="dnld">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[12px] lg:py-[9px] sm:py-[7px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div class="flex justify-center w-full max-w-[40px]">
-                                            <p
-                                                class="text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.4px]">
-                                                101</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[120px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                17 July, 2020
-                                            </p>
-                                        </div>
-                                        <div class="w-full max-w-[220px] flex justify-center max-w-[160px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                Card
-                                            </p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[80px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                £ 5400</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[70px]">
-                                            <img class="h-[22px]" src="./assets/svg/downlod.svg" alt="dnld">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[12px] lg:py-[9px] sm:py-[7px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div class="flex justify-center w-full max-w-[40px]">
-                                            <p
-                                                class="text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.4px]">
-                                                101</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[120px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                17 July, 2020
-                                            </p>
-                                        </div>
-                                        <div class="w-full max-w-[220px] flex justify-center max-w-[160px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                Card
-                                            </p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[80px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                £ 5400</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[70px]">
-                                            <img class="h-[22px]" src="./assets/svg/downlod.svg" alt="dnld">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="flex w-full xl:gap-[30px] md:gap-[15px] sm:gap-[10px] xl:py-[12px] lg:py-[9px] sm:py-[7px] py-[5px] border-t border-[#868686] justify-between">
-                                        <div class="flex justify-center w-full max-w-[40px]">
-                                            <p
-                                                class="text-[#3D3D3D] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.4px]">
-                                                101</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[120px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                17 July, 2020
-                                            </p>
-                                        </div>
-                                        <div class="w-full max-w-[220px] flex justify-center max-w-[160px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                Card
-                                            </p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[80px]">
-                                            <p
-                                                class="flex text-[#3D3D3D] font-normal lg:text-base md:text-[15px] sm:text-sm text-[13px] tracking-[0.48px]">
-                                                £ 5400</p>
-                                        </div>
-                                        <div class="flex justify-center w-full max-w-[70px]">
-                                            <img class="h-[22px]" src="./assets/svg/downlod.svg" alt="dnld">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        class=" overflow-x-scroll [scrollbar-width:none] overscroll-x-contain shadow-[0px_4px_15px_0px_rgba(0,0,0,0.08)] rounded-[14px] w-full">
+                        <div class="min-w-[620px] w-full max-w-full">
+                            <table class="w-full text-center">
+                                <thead class="bg-[rgba(181,166,66,0.30)] rounded-[14px]">
+                                    <tr>
+                                        <th class="w-[4%] rounded-bl-[14px]"></th>
+                                        <th
+                                            class="font-medium xl:text-[20px] lg:text-lg md:text-[17px] sm:text-base text-sm text-[#3D3D3D] tracking-[0.48px] py-[10px]">
+                                            ID</th>
+                                        <th
+                                            class="font-medium xl:text-[20px] lg:text-lg md:text-[17px] sm:text-base text-sm text-[#3D3D3D] tracking-[0.48px]">
+                                            Date</th>
+                                        <th
+                                            class="font-medium xl:text-[20px] lg:text-lg md:text-[17px] sm:text-base text-sm text-[#3D3D3D] tracking-[0.48px]">
+                                            Payment method</th>
+                                        <th
+                                            class="font-medium xl:text-[20px] lg:text-lg md:text-[17px] sm:text-base text-sm text-[#3D3D3D] tracking-[0.48px]">
+                                            Amount</th>
+                                        <th
+                                            class="font-medium xl:text-[20px] lg:text-lg md:text-[17px] sm:text-base text-sm text-[#3D3D3D] tracking-[0.48px]">
+                                            Receipt</th>
+                                        <th class="w-[4%] rounded-br-[14px]"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="w-[4%]"></td>
+                                        <td
+                                            class="py-[11px] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px]">
+                                            101
+                                        </td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px]">
+                                            17 July, 2020</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px]">
+                                            Card</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px]">
+                                            £ 5400</td>
+                                        <td class="flex justify-center pt-[16px]">
+                                            <img src="./assets/svg/downlod.svg" alt="">
+                                        </td>
+                                        <td class="w-[4%]"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-[4%]"></td>
+                                        <td
+                                            class="py-[11px] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            101
+                                        </td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            17 July, 2020</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            Card</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            £ 5400</td>
+                                        <td
+                                            class="flex justify-center pt-[16px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            <img src="./assets/svg/downlod.svg" alt="">
+                                        </td>
+                                        <td class="w-[4%]"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-[4%]"></td>
+                                        <td
+                                            class="py-[11px] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            101
+                                        </td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            17 July, 2020</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            Card</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            £ 5400</td>
+                                        <td
+                                            class="flex justify-center pt-[16px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            <img src="./assets/svg/downlod.svg" alt="">
+                                        </td>
+                                        <td class="w-[4%]"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-[4%]"></td>
+                                        <td
+                                            class="py-[11px] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            101
+                                        </td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            17 July, 2020</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            Card</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            £ 5400</td>
+                                        <td
+                                            class="flex justify-center pt-[16px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            <img src="./assets/svg/downlod.svg" alt="">
+                                        </td>
+                                        <td class="w-[4%]"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w-[4%]"></td>
+                                        <td
+                                            class="py-[11px] lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            101
+                                        </td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            17 July, 2020</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            Card</td>
+                                        <td
+                                            class="lg:text-base md:text-[15px] sm:text-sm text-[13px] font-normal tracking-[0.48px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            £ 5400</td>
+                                        <td
+                                            class="flex justify-center pt-[16px] border-t-[0.5px] border-[rgba(134,134,134,0.2)]">
+                                            <img src="./assets/svg/downlod.svg" alt="">
+                                        </td>
+                                        <td class="w-[4%]"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
